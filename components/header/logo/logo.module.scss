@@ -1,0 +1,23 @@
+@import '../../../styles/base';
+
+.logo {
+  p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  p:first-child {
+    width: 75px;
+    height: 75px;
+  }
+
+  p:last-child {
+    font-family: $primary-font;
+    font-size: 20px;
+    color: #353940;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+}

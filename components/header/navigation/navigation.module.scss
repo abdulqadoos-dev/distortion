@@ -1,0 +1,40 @@
+.navigation {
+    ul {
+        list-style-type: none;
+        margin: 25px 20px 0 0;
+        text-align: right;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            text-transform: uppercase;
+            margin: 0 20px;
+            font-family: "Montserrat";
+            font-size: 20px;
+            text-align: left;
+
+            span {
+                display: block;
+            }
+
+            span:first-child {
+                cursor: pointer;
+            }
+
+            span:last-child {
+                width: 50%;
+                height: 2px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.active {
+    font-weight: 500;
+
+    span:last-child {
+        background-color: #FFA73C;
+    }
+}
