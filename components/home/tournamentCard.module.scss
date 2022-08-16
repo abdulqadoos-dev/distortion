@@ -1,0 +1,52 @@
+.tournamentCard {
+  padding: 10px;
+  display: inline-grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 2px solid #353940;
+  border-radius: 5px;
+}
+
+.tournamentCard > div:first-child {
+  width: 137px;
+  height: 258px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.tournamentCard > div:last-child {
+  color: white;
+}
+
+.tournamentCard h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.schedule > p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.schedule > p > span {
+  margin: 0 5px;
+}
+
+.schedule > p:first-child {
+
+}
+
+.schedule > p:last-child {
+
+}
+
+.trophy {
+  padding-top: 30px;
+}
+
+.trophy > span {
+  margin: 0 5px;
+  vertical-align: middle;
+}

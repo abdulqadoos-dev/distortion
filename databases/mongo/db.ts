@@ -6,10 +6,10 @@ import { Connections } from '../../types/connections'
 const connect = async () => {
   const content = fs.readFileSync(path.resolve(process.cwd(), '../connections.json'), 'utf-8')
   const connections: Connections = JSON.parse(content)
-  const mongo = connections.mongo
+  const mongoConnection = connections.mongo
 
   try {
-    await mongoose.connect(`mongodb://${mongo.user}:${mongo.password}@${mongo.address}:${mongo.port}`)
+    await mongoose.connect(`mongodb://${mongoConnection.user}:${mongoConnection.password}@${mongoConnection.address}:${mongoConnection.port}`)
   } catch (err) {
     console.error('Mongo connection failed')
   }
