@@ -4,15 +4,13 @@ import Connection from './connection/connection'
 import styles from './header.module.scss'
 
 const Header = () => {
-  return (
-    <header>
-      <div className={styles.container}>
-        <Logo />
-        <Navigation />
-        <Connection />
-      </div>
-    </header>
-  )
+    return (
+        <header className={styles.container}>
+            <Logo/>
+            <Navigation/>
+            <Connection/>
+        </header>
+    )
 }
 
 export default Header

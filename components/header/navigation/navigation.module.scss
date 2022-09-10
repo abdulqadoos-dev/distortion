@@ -1,40 +1,36 @@
+@import '../../../styles/base';
+
 .navigation {
-    ul {
-        list-style-type: none;
-        margin: 25px 20px 0 0;
-        text-align: right;
+  ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
 
-        li {
-            display: inline-block;
-            vertical-align: middle;
-            color: white;
-            text-transform: uppercase;
-            margin: 0 20px;
-            font-family: "Montserrat";
-            font-size: 20px;
-            text-align: left;
-
-            span {
-                display: block;
-            }
-
-            span:first-child {
-                cursor: pointer;
-            }
-
-            span:last-child {
-                width: 50%;
-                height: 2px;
-                margin: auto;
-            }
-        }
+    li {
+      color: white;
+      margin: 0 15px;
+      padding: 20px 10px;
+      font-size: 20px;
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      font-family: $primary-font;
+      border-bottom: 2px solid #0F1214;
+      transition: $transition;
     }
+
+    li:hover {
+      cursor: pointer;
+      border-bottom: 2px solid $primary-color;
+      transition: $transition;
+    }
+
+    .active {
+      font-weight: 600;
+      border-bottom: 2px solid $primary-color;
+      transition: $transition;
+    }
+  }
 }
 
-.active {
-    font-weight: 500;
-
-    span:last-child {
-        background-color: #FFA73C;
-    }
-}
