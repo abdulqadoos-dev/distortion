@@ -5,6 +5,7 @@ import Slide from '../components/home/slide'
 import UpcomingTournaments from '../components/home/upcoming'
 import FAQ from '../components/home/faq'
 import styles from '../styles/Home.module.css'
+import LeaderBoard from "../components/home/leaderBoard";
 
 const Home: NextPage = () => {
     return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
                 <main>
                     <Slide/>
                     <UpcomingTournaments/>
+                    <LeaderBoard/>
                     <FAQ/>
                 </main>
             </Layout>

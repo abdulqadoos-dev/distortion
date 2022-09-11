@@ -17,8 +17,6 @@ const TournamentCard = ({name}: { name: string }) => {
                 <img src="/images/fortnite-card.jpg"/>
             </div>
 
-
-
             <section>
 
                 <div className={styles.cardHeader}>

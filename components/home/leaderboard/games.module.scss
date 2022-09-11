@@ -1,0 +1,10 @@
+@import "styles/base";
+.games {
+  display: flex;
+  gap: 20px;
+
+  .gameItem {
+    border: 1px solid $light-gray;
+    padding: 20px 30px;
+  }
+}
