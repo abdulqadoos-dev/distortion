@@ -9,9 +9,15 @@ const TournamentCard = ({name}: { name: string }) => {
     return (
         <section className={styles.tournamentCard}>
 
+            <div className={styles.star}>
+                <img src="/images/icons/star.svg" alt=""/>
+            </div>
+
             <div className={styles.cardImage}>
                 <img src="/images/fortnite-card.jpg"/>
             </div>
+
+
 
             <section>
 

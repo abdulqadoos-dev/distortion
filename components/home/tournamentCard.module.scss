@@ -9,12 +9,19 @@
   align-items: center;
   grid-template-columns: 1fr 3fr;
   font-family: $primary-font;
+  position: relative;
 
   .cardImage img {
     width: 100%;
     max-width: 200px;
     border-radius: 20px;
     filter: grayscale(100%);
+  }
+
+  .star{
+    position: absolute;
+    top: 25px;
+    right: 25px;
   }
 
   .cardHeader {
