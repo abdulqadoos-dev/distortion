@@ -1,12 +1,5 @@
 @import '../../../styles/base';
 
-.logo {
-  p {
-    font-family: $primary-font;
-    font-size: 25px;
-    font-weight: bold;
-    color: $white;
-    text-transform: uppercase;
-    display: inline-block;
-  }
+.logo img {
+  width: 280px;
 }
