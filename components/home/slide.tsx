@@ -7,15 +7,16 @@ const Slide = () => {
 
     return (
         <>
-            <div className={styles.slider}>
-                <section>
+            <section className={styles.slider}>
+                <div className={styles.filter}/>
+                <div className={styles.content}>
                     <h1>Play & Earn with your favorite games</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <button className={buttonStyles.button}>{t('join-now')}</button>
-                </section>
-            </div>
+                </div>
+            </section>
         </>
     )
 }

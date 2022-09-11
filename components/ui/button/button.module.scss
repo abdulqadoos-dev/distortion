@@ -21,3 +21,26 @@
   color: $primary-color;
   transition: $transition;
 }
+
+
+.buttonOutline {
+  padding: 10px 0;
+  background-color: transparent;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  border: 2px solid $primary-color;
+  font-family: $primary-font;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: $transition;
+}
+
+.buttonOutline:hover {
+  background-color: $primary-color;
+  color: $black;
+  transition: $transition;
+}
