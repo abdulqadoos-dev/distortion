@@ -21,6 +21,7 @@ const LeaderBoard = () => {
 
                 <div className={styles.tabsContent}>
                     <Games/>
+                    <ListItems/>
                 </div>
 
             </section>
