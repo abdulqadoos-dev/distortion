@@ -1,21 +1,55 @@
-.faq {
+@import "/styles/base";
 
-}
+.faqsContainer {
+  margin: 50px;
+  font-family: $primary-font;
 
-.faq h2 {
-  color: #FFA73C;
-  font-size: 20px;
-  font-family: 'Montserrat';
-  font-weight: bold;
-}
+  h2 {
+    color: $primary-color;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 
-.faq ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .faqsListItems {
+    .listItem {
+      background-color: $gray;
+      padding: 0 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: $transition;
 
-.faq ul li {
-  color: white;
-  font-family: 'Montserrat';
+
+      &:hover > .listItemContent {
+        display: block;
+        transition: $transition;
+      }
+
+      &:hover > .listItemHeader img {
+        rotate: 180deg;
+        transition: $transition;
+      }
+
+      .listItemHeader {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        img {
+          transition: $transition;
+        }
+      }
+
+      .listItemContent {
+        font-size: 15px;
+        padding-bottom: 20px;
+        display: none;
+      }
+
+    }
+  }
 }

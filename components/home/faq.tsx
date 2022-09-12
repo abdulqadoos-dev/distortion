@@ -1,18 +1,46 @@
 import styles from './faq.module.scss'
+import useTranslation from "next-translate/useTranslation";
 
 const FAQ = () => {
-  return (
-    <>
-      <div className={styles.faq}>
-        <h2>FAQ</h2>
-        <ul>
-          <li>What is Distortion ?</li>
-          <li>What is a non custodial wallet ?</li>
-          <li>How to send fund to my wallet ?</li>
-        </ul>
-      </div>
-    </>
-  )
+    const {t, lang} = useTranslation('common')
+
+    return (
+        <>
+            <div className={styles.faqsContainer}>
+                <h2>{t('FAQ')}</h2>
+
+                <div className={styles.faqsListItems}>
+
+                    <div className={styles.listItem}>
+                        <div className={styles.listItemHeader}>
+                            <p>What is Distortion ?</p>
+                            <img src="/images/icons/chevron-up.svg" alt=""/>
+                        </div>
+
+                        <div className={styles.listItemContent}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores esse illum
+                                itaque libero nulla porro quos similique, unde voluptates. Accusantium corporis dolores
+                                ducimus ex id nostrum omnis, veniam voluptatum.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.listItem}>
+                        <div className={styles.listItemHeader}>
+                            <p>What is Distortion ?</p>
+                            <img src="/images/icons/chevron-up.svg" alt=""/>
+                        </div>
+                        <div className={styles.listItemContent}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores esse illum
+                                itaque libero nulla porro quos similique, unde voluptates. Accusantium corporis dolores
+                                ducimus ex id nostrum omnis, veniam voluptatum.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </>
+    )
 }
 
 export default FAQ
