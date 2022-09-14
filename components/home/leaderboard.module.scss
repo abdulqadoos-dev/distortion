@@ -45,3 +45,20 @@
     text-align: right;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .leaderboard {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leaderboard {
+    margin: 20px;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+  }
+}

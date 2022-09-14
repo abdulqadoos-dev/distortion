@@ -89,3 +89,16 @@
     background-color: $light-gray;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+ .listContainer {
+   .listItemContent {
+     .winnerBadge {
+       height: 45px;
+       width: 75px;
+       padding: 0 5px;
+     }
+   }
+ }
+}

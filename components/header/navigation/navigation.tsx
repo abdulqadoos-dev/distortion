@@ -22,6 +22,9 @@ const Navigation = (): JSX.Element => {
 
     return (
         <div className={styles.navigation}>
+            <div className={styles.closeNavigation}>
+                <img src="/images/icons/chevron-up.svg" alt=""/>
+            </div>
             <ul>
                 <li className={getClassName(1)}>
                     {t('header-nav-home')}

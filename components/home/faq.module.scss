@@ -39,6 +39,7 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+
         img {
           transition: $transition;
         }
@@ -52,4 +53,35 @@
 
     }
   }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .faqsContainer {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faqsContainer {
+    margin: 20px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .faqsListItems {
+      .listItem {
+        margin-bottom: 10px;
+
+        .listItemHeader {
+          font-size: 18px;
+        }
+        .listItemContent {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
 }

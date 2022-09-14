@@ -10,6 +10,8 @@
   margin: 50px 0;
   position: relative;
   overflow: clip;
+  width: 100%;
+
 
   .filter {
     height: 1200px;
@@ -37,4 +39,84 @@
     }
   }
 
+}
+
+
+@media screen and (max-width: 1280px) {
+  .slider {
+    height: 400px;
+    margin: 10px;
+    width: auto;
+    border-radius: 30px;
+
+
+    .filter {
+      width: 620px;
+      height: 680px;
+    }
+
+    .content {
+      padding: 0 35px;
+      width: 100%;
+
+      h1 {
+        font-size: 45px;
+        line-height: 45px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 300px;
+    margin: 5px 20px;
+
+    .filter {
+      width: 470px;
+      height: 500px;
+    }
+
+    .content {
+      padding: 0 25px;
+
+      h1 {
+        font-size: 35px;
+        line-height: 35px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider {
+    height: 250px;
+    margin: 5px 10px;
+
+    .filter {
+      width: 470px;
+      height: 500px;
+    }
+
+    .content {
+      padding: 0 25px;
+
+      h1 {
+        font-size: 25px;
+        line-height: 25px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
 }

@@ -18,7 +18,7 @@
     filter: grayscale(100%);
   }
 
-  .star{
+  .star {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -114,4 +114,112 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1280px) {
+  .tournamentCard {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+
+    .cardFooter {
+      gap: 10px;
+
+      .cardFooterActions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 13px;
+
+          span {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .tournamentCard {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .tournamentCard {
+    border-radius: 25px;
+    padding: 25px;
+    gap: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+
+    .cardFooter {
+      gap: 10px;
+
+      .cardFooterActions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tournamentCard {
+    grid-template-columns: 0fr 1fr;
+
+    .cardHeader {
+      gap: 10px;
+
+      img {
+        width: 120px;
+      }
+
+      p {
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+    .cardDateTime {
+      gap: 10px;
+      margin: 5px 0;
+      font-size: 11px;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+
+    .cardContent p {
+      line-height: 22px;
+      font-size: 13px;
+    }
+
+    .cardFooter {
+      gap: 5px;
+
+      .cardFooterActions {
+        gap: 5px;
+
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
 }

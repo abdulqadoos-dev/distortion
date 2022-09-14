@@ -1,11 +1,19 @@
 @import "styles/base";
+
 .games {
   display: flex;
   gap: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   .gameItem {
     border: 1px solid $light-gray;
     padding: 20px 30px;
   }
 
+}
+
+.games::-webkit-scrollbar {
+  display: none;
 }
