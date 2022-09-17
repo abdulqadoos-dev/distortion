@@ -10,6 +10,8 @@ import Journey from "../../components/landingPage/journey";
 import Novel from "../../components/landingPage/novel";
 import Purpose from "../../components/landingPage/purpose";
 import Join from "../../components/landingPage/join";
+import Collaboration from "../../components/landingPage/collaboration";
+import Roadmap from "../../components/landingPage/roadmap";
 
 const Home: NextPage = () => {
     return (
@@ -28,6 +30,8 @@ const Home: NextPage = () => {
                         <Novel/>
                         <Purpose/>
                         <Join/>
+                        <Collaboration/>
+                        <Roadmap/>
                         <UpcomingTournaments/>
                         <FAQ/>
                     </main>
