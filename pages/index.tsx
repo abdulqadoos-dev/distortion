@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                     <main>
                         <Slide/>
                         <UpcomingTournaments/>
-                        {/*<LeaderBoard/>*/}
+                        <LeaderBoard/>
                         <FAQ/>
                     </main>
                 </Layout>

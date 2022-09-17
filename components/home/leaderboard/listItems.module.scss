@@ -102,3 +102,9 @@
    }
  }
 }
+
+@media screen and (max-width: 640px) {
+  .listContainer {
+    width: 900px;
+  }
+}
