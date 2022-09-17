@@ -8,6 +8,8 @@ import styles from './landingPage.module.scss'
 import Copyrights from "../../components/footer/copyrights";
 import Journey from "../../components/landingPage/journey";
 import Novel from "../../components/landingPage/novel";
+import Purpose from "../../components/landingPage/purpose";
+import Join from "../../components/landingPage/join";
 
 const Home: NextPage = () => {
     return (
@@ -24,6 +26,8 @@ const Home: NextPage = () => {
                         <Slide/>
                         <Journey/>
                         <Novel/>
+                        <Purpose/>
+                        <Join/>
                         <UpcomingTournaments/>
                         <FAQ/>
                     </main>
