@@ -5,12 +5,11 @@
   justify-content: space-between;
   align-items: center;
   height: 140px;
+  margin: $container-margin;
 
   .actions {
     display: flex;
     align-items: center;
-
-
   }
 
 }

@@ -1,7 +1,10 @@
 @import "/styles/base";
 
 .container {
-  margin: 20px;
+  margin: $container-margin;
+  margin-top: 100px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   text-align: center;
   font-weight: $primary-font;
 

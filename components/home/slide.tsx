@@ -7,7 +7,7 @@ const Slide = () => {
 
     return (
         <>
-            <section className={styles.slider}>
+            <section className={styles.container}>
                 <div className={styles.filter}/>
                 <div className={styles.content}>
                     <h1>Play & Earn with your favorite games</h1>

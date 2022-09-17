@@ -1,7 +1,8 @@
 @import "styles/base";
 
 .container {
-  margin: 20px;
+  margin: $container-margin;
+  margin-top: 100px !important;
   font-family: $primary-font;
 
   .heading {

@@ -1,7 +1,10 @@
 @import "/styles/base";
 
 .container {
-  margin: 20px 0;
+  margin: $container-margin;
+  margin-top: 100px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   background-image: url("/images/novel-banner.jpg");
   background-size: cover;
   height: 300px;

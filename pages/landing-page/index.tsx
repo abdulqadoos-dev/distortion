@@ -12,6 +12,7 @@ import Purpose from "../../components/landingPage/purpose";
 import Join from "../../components/landingPage/join";
 import Collaboration from "../../components/landingPage/collaboration";
 import Roadmap from "../../components/landingPage/roadmap";
+import LeaderBoard from "../../components/home/leaderBoard";
 
 const Home: NextPage = () => {
     return (
@@ -29,10 +30,11 @@ const Home: NextPage = () => {
                         <Journey/>
                         <Novel/>
                         <Purpose/>
-                        <Join/>
                         <Collaboration/>
-                        <Roadmap/>
                         <UpcomingTournaments/>
+                        <LeaderBoard/>
+                        <Roadmap/>
+                        <Join/>
                         <FAQ/>
                     </main>
                 </Layout>
