@@ -7,6 +7,7 @@ import FAQ from '../../components/home/faq'
 import styles from './landingPage.module.scss'
 import Copyrights from "../../components/footer/copyrights";
 import Journey from "../../components/landingPage/journey";
+import Novel from "../../components/landingPage/novel";
 
 const Home: NextPage = () => {
     return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
                     <main>
                         <Slide/>
                         <Journey/>
+                        <Novel/>
                         <UpcomingTournaments/>
                         <FAQ/>
                     </main>
