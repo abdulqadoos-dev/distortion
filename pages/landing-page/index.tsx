@@ -6,6 +6,7 @@ import UpcomingTournaments from '../../components/home/upcoming'
 import FAQ from '../../components/home/faq'
 import styles from './landingPage.module.scss'
 import Copyrights from "../../components/footer/copyrights";
+import Journey from "../../components/landingPage/journey";
 
 const Home: NextPage = () => {
     return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
                 <Layout>
                     <main>
                         <Slide/>
+                        <Journey/>
                         <UpcomingTournaments/>
                         <FAQ/>
                     </main>
