@@ -38,6 +38,8 @@
 
     .tabsContent {
       overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
       margin: 20px 0;
     }
   }

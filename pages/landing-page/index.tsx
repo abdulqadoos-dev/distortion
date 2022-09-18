@@ -13,6 +13,7 @@ import Join from "../../components/landingPage/join";
 import Collaboration from "../../components/landingPage/collaboration";
 import Roadmap from "../../components/landingPage/roadmap";
 import LeaderBoard from "../../components/home/leaderBoard";
+import Experience from "../../components/landingPage/experiences";
 
 const Home: NextPage = () => {
     return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
                         <Slide/>
                         <Journey/>
                         <Novel/>
+                        <Experience/>
                         <Purpose/>
                         <Collaboration/>
                         <UpcomingTournaments/>
