@@ -8,8 +8,9 @@ const UpcomingTournaments = () => {
     const {t, lang} = useTranslation('common')
 
     return (
-        <section className={styles.upcoming}>
-            <h2>{t('upcoming tournaments')}</h2>
+        <section className={styles.container}>
+            <h1>{t('upcoming tournaments')}</h1>
+            
             <div className={styles.tournamentCardContainer}>
                 <TournamentCard name='Valorant'/>
                 <TournamentCard name='Valorant'/>

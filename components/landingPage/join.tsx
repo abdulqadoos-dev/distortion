@@ -6,7 +6,6 @@ const Join = () => {
     const {t, lang} = useTranslation('common')
     return (
         <section className={styles.container}>
-
             <div>
                 <h1>Join for free now ! </h1>
                 <p>Easy and secureEasy secure</p>

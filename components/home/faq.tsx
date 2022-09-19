@@ -6,8 +6,8 @@ const FAQ = () => {
 
     return (
         <>
-            <div className={styles.faqsContainer}>
-                <h2>{t('FAQ')}</h2>
+            <div className={styles.container}>
+                <h1>{t('FAQ')}</h1>
 
                 <div className={styles.faqsListItems}>
 

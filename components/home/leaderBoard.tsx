@@ -9,8 +9,8 @@ const LeaderBoard = () => {
     const {t, lang} = useTranslation('common')
 
     return (
-        <section className={styles.leaderboard}>
-            <h2>{t('leaderboard')}</h2>
+        <section className={styles.container}>
+            <h1>{t('leaderboard')}</h1>
 
             <section className={styles.leaderboardTabsContainer}>
 

@@ -2,9 +2,7 @@
 
 .container {
   margin: $container-margin;
-  margin-top: 100px !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  width: $container-width;
   text-align: center;
   font-weight: $primary-font;
 
@@ -12,12 +10,12 @@
     h1 {
       color: $primary-color;
       margin: 0;
-      font-size: 36px;
+      font-size: $medium-heading;
     }
 
     h3 {
       font-weight: 100;
-      font-size: 25px;
+      font-size: $small-heading;
       margin: 0;
     }
   }
