@@ -32,12 +32,13 @@ const Home: NextPage = () => {
                         <Novel/>
                         <Experience/>
                         <Purpose/>
-                        <Collaboration/>
                         <UpcomingTournaments/>
                         <LeaderBoard/>
                         <Roadmap/>
                         <Join/>
                         <FAQ/>
+                        <Collaboration/>
+
                     </main>
                 </Layout>
             </div>

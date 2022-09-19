@@ -23,6 +23,8 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      position: relative;
+
 
       h2, h3 {
         text-transform: uppercase;
@@ -33,16 +35,20 @@
       .icon {
         width: 100px;
         height: 100px;
-        border: 2px solid $secondary-color;
+        border: 3px solid $secondary-color;
         rotate: 45deg;
         margin: 40px 0;
+        background-color: $black;
+        z-index: 5;
 
-        img {
+        svg {
           width: 50px;
           height: 95px;
           rotate: 315deg;
+          stroke: $secondary-color;
         }
       }
+
 
       small {
         color: $secondary-color;
@@ -66,11 +72,41 @@
       }
 
       .icon {
-        border: 2px solid $primary-color;
+        border: 3px solid $primary-color;
+        svg {
+          stroke: $primary-color;
+        }
       }
     }
 
   }
+
+  .item:nth-of-type(odd) {
+    .splitter {
+      position: absolute;
+      right: -200px;
+      top: 34.5%;
+
+      svg {
+        width: 290px;
+        height: 3px;
+      }
+    }
+  }
+
+  .item:nth-of-type(even) {
+    .splitter {
+      position: absolute;
+      right: -200px;
+      top: 28.5%;
+
+      svg {
+        width: 290px;
+        height: 3px;
+      }
+    }
+  }
+
 }
 
 
