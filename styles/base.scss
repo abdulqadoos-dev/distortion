@@ -1,13 +1,18 @@
 $primary-font: 'Montserrat';
 $primary-color: #FFA73C;
-$secondary-color : #D6FF00;
+$secondary-color: #D6FF00;
 $black: #000000;
-$light-gray : #373737;
-$gray : #232529;
-$darker-gray : #1A1D1F;
+$light-gray: #373737;
+$gray: #232529;
+$darker-gray: #1A1D1F;
 
 
 $white: #fff;
-$transition : 0.3s;
+$transition: 0.3s;
 
-$container-margin: 30px
+$container-margin: 30px auto;
+$container-width: 90vw;
+
+$heading-margin: 50px;
+$medium-heading: 36px;
+$large-heading: 56px;

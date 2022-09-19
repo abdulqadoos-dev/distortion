@@ -1,15 +1,14 @@
 @import "/styles/base";
 
 .container {
-  margin: $container-margin;
+  margin: 100px auto;
+  width: $container-width;
   font-family: $primary-font;
 
   .heading {
-    margin: 50px 0;
-
     h1 {
-      font-size: 50px;
-      margin: 0;
+      font-size: $large-heading;
+      margin: 5px 0;
     }
 
     p {
@@ -22,7 +21,7 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       justify-items: center;
-      padding-bottom: 20px;
+      margin-top: 50px;
 
       .item {
         text-align: center;
@@ -52,27 +51,32 @@
 
     .content {
       .infrastructure {
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/infrastructure.png");
-        background-size: cover;
-        padding: 50px;
+        min-height: 900px;
+        padding: 100px;
 
         .heading {
-          padding: 50px;
+          margin-bottom: 100px !important;
 
           h1 {
-            font-size: 30px;
             margin: 0;
+            font-size: $medium-heading;
+            text-transform: uppercase;
           }
         }
 
         .body {
-          padding: 50px;
           display: grid;
           justify-items: center;
           grid-template-columns: repeat(5, 1fr);
 
           .icon {
             text-align: center;
+            padding: 20px 0;
+
+            svg {
+              width: 100px;
+              height: 80px;
+            }
 
             h3 {
               text-transform: uppercase;
@@ -85,7 +89,7 @@
           }
 
           .icon:nth-of-type(2) {
-            grid-column-start: 3;
+            grid-column-start: 4;
             grid-column-end: 6;
           }
 
@@ -101,25 +105,25 @@
           }
 
           .icon:nth-of-type(5) {
-            grid-column-start: 3;
+            grid-column-start: 4;
             grid-column-end: 6;
           }
         }
       }
 
-      .challenges, .skills ,  .visibility, .earnings{
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/challenges.png");
-        background-size: cover;
-        padding: 50px;
+      .challenges, .skills, .visibility, .earnings {
+        min-height: 900px;
+        padding: 100px;
 
         .heading {
-          padding: 50px;
+          margin-bottom: 100px !important;
 
           h1 {
-            font-size: 30px;
+            font-size: $medium-heading;
             margin: 0;
             text-transform: uppercase;
           }
+
           h3 {
             font-size: 26px;
           }
@@ -128,15 +132,18 @@
         .body {
           padding: 50px;
           display: grid;
-          justify-items: center;
+          justify-items: start;
           grid-template-columns: repeat(3, 1fr);
 
           .icon {
             text-align: center;
+            padding: 20px 0;
+
             svg {
               width: 100px;
               height: 80px;
             }
+
             h3 {
               text-transform: uppercase;
             }
@@ -144,16 +151,30 @@
         }
       }
 
+      .infrastructure {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/infrastructure.png");
+        background-size: cover;
+      }
+
+      .challenges {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/challenges.png");
+        background-size: cover;
+      }
+
       .skills {
         background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/skills.png");
+        background-size: cover;
+
       }
 
       .visibility {
         background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/visibility.png");
+        background-size: cover;
       }
 
       .earnings {
         background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/images/earnings.png");
+        background-size: cover;
       }
     }
   }

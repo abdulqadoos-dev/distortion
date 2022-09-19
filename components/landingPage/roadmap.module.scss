@@ -1,13 +1,14 @@
 @import "styles/base";
 
 .container {
+  width: $container-width;
   margin: $container-margin;
-  margin-top: 100px !important;
   font-family: $primary-font;
 
   .heading {
     h1 {
-      font-size: 36px;
+      font-size: $medium-heading;
+      margin: $heading-margin;
     }
   }
 
@@ -73,6 +74,7 @@
 
       .icon {
         border: 3px solid $primary-color;
+
         svg {
           stroke: $primary-color;
         }
