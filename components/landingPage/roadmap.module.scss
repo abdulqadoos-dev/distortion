@@ -9,6 +9,7 @@
     h1 {
       font-size: $medium-heading;
       margin: $heading-margin;
+      text-transform: uppercase;
     }
   }
 
@@ -118,17 +119,52 @@
   .container {
     .items {
       grid-template-columns: repeat(3, 1fr);
+
+      .item:nth-of-type(3) {
+        .splitter {
+          display: none;
+        }
+      }
     }
+
   }
 
 }
 
 
+@media screen and (max-width: 768px) {
+  .container {
+    .items {
+      .item {
+        .splitter {
+          right: -100px;
+          svg {
+            width: 200px;
+            height: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 640px) {
 
   .container {
+    .heading {
+      h1 {
+        font-size: $small-heading;
+        margin: 20px 0;
+      }
+    }
     .items {
       grid-template-columns: repeat(1, 1fr);
+
+      .item {
+        .splitter {
+         display: none;
+        }
+      }
     }
   }
 }
