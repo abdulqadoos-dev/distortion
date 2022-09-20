@@ -30,11 +30,7 @@ const TournamentCard = ({name}: { name: string }) => {
                 </div>
 
                 <div className={styles.cardContent}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores aspernatur,
-                        commodi
-                        consectetur doloribus dolorum eligendi error harum modi, nostrum placeat provident quis quos
-                        ratione
-                        suscipit temporibus voluptatem voluptatum?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores aspernatur,</p>
                 </div>
 
                 <div className={styles.cardFooter}>

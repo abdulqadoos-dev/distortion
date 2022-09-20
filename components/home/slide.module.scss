@@ -11,6 +11,7 @@
   width: $container-width;
   position: relative;
   overflow: clip;
+  font-family: $primary-font;
 
 
   .filter {
@@ -29,13 +30,11 @@
 
     h1 {
       margin: 0;
-      line-height: 70px;
-      font-size: 70px;
-      font-weight: 800;
+      font-size: $large-heading;
     }
 
     p {
-      font-size: 23px;
+      font-size: $large-paragraph;
     }
   }
 
@@ -45,36 +44,31 @@
 @media screen and (max-width: 1280px) {
   .container {
     height: 400px;
-    margin: 10px;
-    width: auto;
     border-radius: 30px;
 
 
     .filter {
-      width: 620px;
-      height: 680px;
+      width: 770px;
+      height: 850px;
     }
 
     .content {
-      padding: 0 35px;
-      width: 100%;
+      width: 75%;
 
       h1 {
-        font-size: 45px;
-        line-height: 45px;
+        font-size: $large-heading;
       }
 
-      p {
-        font-size: 18px;
-      }
     }
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .container {
     height: 300px;
-    margin: 5px 20px;
+    width: $container-width;
+    margin: $container-margin;
 
     .filter {
       width: 470px;
@@ -98,24 +92,19 @@
 
 @media screen and (max-width: 640px) {
   .container {
-    height: 250px;
-    margin: 5px 10px;
-
-    .filter {
-      width: 470px;
-      height: 500px;
-    }
+    margin: $container-margin;
+    width: $container-width;
 
     .content {
-      padding: 0 25px;
+      width: 95%;
+      padding: 15px;
 
       h1 {
-        font-size: 25px;
-        line-height: 25px;
+        font-size: $small-heading;
       }
 
       p {
-        font-size: 12px;
+        font-size: $small-paragraph;
       }
     }
   }

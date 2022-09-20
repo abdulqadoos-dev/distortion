@@ -37,11 +37,14 @@
 
 @media screen and (max-width: 1280px) {
   .container {
-    height: 60px;
-    margin: 20px;
+    height: 100px;
+    margin: $container-margin;
+    width: $container-width;
+
     .logo img {
       width: 190px;
     }
+
     ul {
       li {
         margin: 3px;
@@ -56,10 +59,12 @@
 @media screen and (max-width: 768px) {
   .container {
     height: 50px;
-    margin: 20px;
+    margin: $container-margin;
+
     .logo img {
       width: 150px;
     }
+
     ul {
       li {
         margin: 3px;
@@ -73,6 +78,10 @@
 
 @media screen and (max-width: 640px) {
   .container {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 50px;
+
     ul {
       li {
         margin: 0;

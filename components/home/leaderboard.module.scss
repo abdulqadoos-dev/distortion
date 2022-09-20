@@ -50,17 +50,19 @@
 
 @media screen and (max-width: 1280px) {
   .container {
-    margin: 20px;
+    margin: $container-margin;
+    width: $container-width;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    margin: 20px;
+    margin: $container-margin;
+    width: $container-width;
 
-    h2 {
-      margin-bottom: 20px;
-      font-size: 25px;
+    h1 {
+      font-size: $small-heading;
+      margin-bottom: 15px;
     }
   }
 }
