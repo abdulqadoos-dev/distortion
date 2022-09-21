@@ -1,0 +1,104 @@
+@import "styles/base";
+
+.container {
+  width: $container-width;
+  margin: $container-margin;
+  text-align: center;
+  font-family: $primary-font;
+
+  .heading {
+    h1 {
+      font-size: $small-heading;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+  }
+
+  .content {
+    background-color: $darker-gray;
+    border-radius: 10px;
+    padding: 10px;
+    height: 500px;
+
+    p {
+      width: 800px;
+      margin: 50px auto;
+      font-size: $medium-paragraph;
+      color: $gray;
+    }
+
+    hr {
+      width: 650px;
+      margin: 20px auto;
+      height: 1px;
+      background-color: $light-gray;
+      border: none;
+    }
+
+    button {
+      width: 500px;
+      margin: 20px auto;
+      padding: 15px;
+      display: block;
+      color: $primary-color !important;
+    }
+
+    button:hover {
+      color: $black !important;
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .container {
+    .content {
+      p {
+        width: 95%;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    .container {
+      .content {
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .heading {
+      h1 {
+        font-size: $large-paragraph;
+      }
+    }
+
+    .content {
+      height: 400px;
+
+      p {
+        font-size: $small-paragraph;
+        margin: 10px auto;
+      }
+      button, hr {
+        width: 95%;
+      }
+    }
+  }
+
+}
