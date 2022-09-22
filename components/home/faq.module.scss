@@ -1,21 +1,88 @@
-.faq {
+@import "/styles/base";
 
+.container {
+  margin: $container-margin;
+  width: $container-width;
+  font-family: $primary-font;
+
+  h1 {
+    font-size: $medium-heading;
+    text-transform: uppercase;
+    margin: 50px 0;
+  }
+
+  .faqsListItems {
+    .listItem {
+      background-color: $gray;
+      padding: 0 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: $transition;
+
+
+      &:hover > .listItemContent {
+        display: block;
+        transition: $transition;
+      }
+
+      &:hover > .listItemHeader img {
+        rotate: 180deg;
+        transition: $transition;
+      }
+
+      .listItemHeader {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          transition: $transition;
+        }
+      }
+
+      .listItemContent {
+        font-size: 15px;
+        padding-bottom: 20px;
+        display: none;
+      }
+
+    }
+  }
 }
 
-.faq h2 {
-  color: #FFA73C;
-  font-size: 20px;
-  font-family: 'Montserrat';
-  font-weight: bold;
+
+@media screen and (max-width: 1280px) {
+  .container {
+    margin: $container-margin;
+    width: $container-width;
+  }
 }
 
-.faq ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: $container-margin;
+    width: $container-width;
+    h1 {
+      font-size: $small-heading;
+      margin-bottom: 15px;
+    }
 
-.faq ul li {
-  color: white;
-  font-family: 'Montserrat';
+    .faqsListItems {
+      .listItem {
+        margin-bottom: 10px;
+
+        .listItemHeader {
+          font-size: 18px;
+        }
+        .listItemContent {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
 }

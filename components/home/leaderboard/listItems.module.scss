@@ -1,0 +1,110 @@
+@import "/styles/base";
+
+.listContainer {
+
+  margin: 20px 0;
+
+  .listItemHeader {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    background-color: $gray;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $primary-font;
+    }
+  }
+
+  .listItemContent {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+    background-color: $darker-gray;
+
+    .winnerBadge {
+      background-color: $secondary-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 0 3px 3px 0;
+      height: 60px;
+      width: 100px;
+      padding: 0 10px;
+      margin-left: -20px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      p {
+        font-size: 30px;
+        color: $black;
+        font-weight: 900;
+      }
+    }
+
+    .name {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      span {
+        border: 2px solid white;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        overflow: clip;
+        text-align: center;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .winTrophy {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .listItemContent:nth-child(odd) {
+    background-color: $gray;
+  }
+
+  .listItemContent:hover {
+    background-color: $light-gray;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+ .listContainer {
+   .listItemContent {
+     .winnerBadge {
+       height: 45px;
+       width: 75px;
+       padding: 0 5px;
+     }
+   }
+ }
+}
+
+@media screen and (max-width: 640px) {
+  .listContainer {
+    width: 900px;
+  }
+}

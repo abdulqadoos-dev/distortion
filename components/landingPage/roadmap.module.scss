@@ -1,0 +1,170 @@
+@import "styles/base";
+
+.container {
+  width: $container-width;
+  margin: $container-margin;
+  font-family: $primary-font;
+
+  .heading {
+    h1 {
+      font-size: $medium-heading;
+      margin: $heading-margin;
+      text-transform: uppercase;
+    }
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+
+    .item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+
+      h2, h3 {
+        text-transform: uppercase;
+        color: $secondary-color;
+        margin: 0;
+      }
+
+      .icon {
+        width: 100px;
+        height: 100px;
+        border: 3px solid $secondary-color;
+        rotate: 45deg;
+        margin: 40px 0;
+        background-color: $black;
+        z-index: 5;
+
+        svg {
+          width: 50px;
+          height: 95px;
+          rotate: 315deg;
+          stroke: $secondary-color;
+        }
+      }
+
+
+      small {
+        color: $secondary-color;
+      }
+
+      ul {
+        margin: 15px 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          font-size: 14px;
+        }
+      }
+
+    }
+
+    .item:hover, .item.active {
+      h2, h3, small {
+        color: $primary-color;
+      }
+
+      .icon {
+        border: 3px solid $primary-color;
+
+        svg {
+          stroke: $primary-color;
+        }
+      }
+    }
+
+  }
+
+  .item:nth-of-type(odd) {
+    .splitter {
+      position: absolute;
+      right: -200px;
+      top: 34.5%;
+
+      svg {
+        width: 290px;
+        height: 3px;
+      }
+    }
+  }
+
+  .item:nth-of-type(even) {
+    .splitter {
+      position: absolute;
+      right: -200px;
+      top: 28.5%;
+
+      svg {
+        width: 290px;
+        height: 3px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+
+  .container {
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item:nth-of-type(3) {
+        .splitter {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    .items {
+      .item {
+        .splitter {
+          right: -100px;
+          svg {
+            width: 200px;
+            height: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .heading {
+      h1 {
+        font-size: $small-heading;
+        margin: 20px 0;
+      }
+    }
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+
+      .item {
+        .splitter {
+         display: none;
+        }
+      }
+    }
+  }
+}

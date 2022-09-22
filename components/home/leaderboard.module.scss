@@ -1,0 +1,68 @@
+@import "/styles/base";
+
+.container {
+  margin: $container-margin;
+  width: $container-width;
+  font-family: $primary-font;
+
+  h1 {
+    font-size: $medium-heading;
+    text-transform: uppercase;
+    margin: 50px 0;
+  }
+
+  .leaderboardTabsContainer {
+
+    .tabs {
+      border-bottom: 1px solid $light-gray;
+      padding-bottom: 10px;
+
+      span {
+        margin: 8px;
+        font-size: 16px;
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 10px;
+        color: $light-gray;
+        cursor: pointer;
+        transition: $transition;
+      }
+
+      span:hover, span.active {
+        border-bottom: 1px solid $primary-color;
+        color: white;
+        font-weight: 700;
+        transition: $transition;
+      }
+    }
+
+    .tabsContent {
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      margin: 20px 0;
+    }
+  }
+
+  .viewMoreLink {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    margin: $container-margin;
+    width: $container-width;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: $container-margin;
+    width: $container-width;
+
+    h1 {
+      font-size: $small-heading;
+      margin-bottom: 15px;
+    }
+  }
+}

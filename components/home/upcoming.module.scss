@@ -1,21 +1,83 @@
-.upcoming {
+@import "/styles/base";
 
+.container {
+  margin: $container-margin;
+  width: $container-width;
+  font-family: $primary-font;
+
+  h1 {
+    font-size: $medium-heading;
+    text-transform: uppercase;
+    margin: 50px 0;
+  }
+
+  .tournamentCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px
+  }
+
+  .viewMoreLink {
+    text-align: right;
+  }
 }
 
-.upcoming h2 {
-  color: #FFA73C;
-  margin: 0;
-  padding-bottom: 20px;
-  width: 80%;
-  margin: auto;
+@media screen and (max-width: 1280px) {
+  .container {
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+    .tournamentCardContainer {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
-.upcoming > div {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+@media screen and (max-width: 1080px) {
+  .container {
+    .tournamentCardContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: $container-margin;
+
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .tournamentCardContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px
+    }
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+
+    h1 {
+      font-size: $small-heading;
+      margin-bottom: 15px;
+    }
+
+    .tournamentCardContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px
+    }
+
+  }
 }

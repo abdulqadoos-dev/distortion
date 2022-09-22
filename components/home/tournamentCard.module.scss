@@ -1,52 +1,225 @@
+@import "/styles/base";
+
 .tournamentCard {
-  padding: 10px;
-  display: inline-grid;
-  grid-template-columns: 160px 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  border: 2px solid #353940;
-  border-radius: 5px;
+  background-color: #1e1e1e;
+  border-radius: 25px;
+  padding: 25px;
+  gap: 30px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  font-family: $primary-font;
+  position: relative;
+
+  .cardImage img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 20px;
+    filter: grayscale(100%);
+  }
+
+  .star {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .cardHeader {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    img {
+      width: 150px;
+    }
+
+    p {
+      border-left: 2px solid white;
+      padding: 10px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 15px;
+
+      span {
+        color: $secondary-color;
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  .cardDateTime {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: 500;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      background-color: $secondary-color;
+      padding: 3px 10px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: $black;
+      font-weight: 800;
+    }
+  }
+
+  .cardContent p {
+    line-height: 25px;
+    font-size: 17px;
+  }
+
+  .cardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cardFooterPoints {
+      gap: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+
+      img {
+        width: 22px;
+        height: 20px;
+      }
+    }
+
+    .cardFooterActions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-weight: 800;
+        font-size: 17px;
+
+        span {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
 }
 
-.tournamentCard > div:first-child {
-  width: 137px;
-  height: 258px;
-  background-color: black;
-  border-radius: 5px;
+@media screen and (max-width: 1280px) {
+  .tournamentCard {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+
+    .cardFooter {
+      gap: 10px;
+
+      .cardFooterActions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 13px;
+
+          span {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
 
-.tournamentCard > div:last-child {
-  color: white;
+
+@media screen and (max-width: 1280px) {
+  .tournamentCard {
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
-.tournamentCard h3 {
-  font-size: 30px;
-  margin-bottom: 10px;
+
+@media screen and (max-width: 768px) {
+  .tournamentCard {
+    border-radius: 25px;
+    padding: 25px;
+    gap: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+
+    .cardFooter {
+      gap: 10px;
+
+      .cardFooterActions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
 }
 
-.schedule > p {
-  display: inline-block;
-  margin-right: 10px;
-}
+@media screen and (max-width: 640px) {
+  .tournamentCard {
+    grid-template-columns: 0fr 1fr;
 
-.schedule > p > span {
-  margin: 0 5px;
-}
+    .cardHeader {
+      gap: 10px;
 
-.schedule > p:first-child {
+      img {
+        width: 120px;
+      }
 
-}
+      p {
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+    .cardDateTime {
+      gap: 10px;
+      margin: 5px 0;
+      font-size: 11px;
 
-.schedule > p:last-child {
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
 
-}
 
-.trophy {
-  padding-top: 30px;
-}
+    .cardContent p {
+      line-height: 22px;
+      font-size: 13px;
+    }
 
-.trophy > span {
-  margin: 0 5px;
-  vertical-align: middle;
+    .cardFooter {
+      gap: 5px;
+
+      .cardFooterActions {
+        gap: 5px;
+
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
 }

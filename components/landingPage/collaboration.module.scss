@@ -1,0 +1,134 @@
+@import "/styles/base";
+
+.container {
+  margin: $container-margin;
+  width: $container-width;
+  text-align: center;
+  font-weight: $primary-font;
+
+  .heading {
+    h1 {
+      color: $primary-color;
+      margin: 0;
+      font-size: $medium-heading;
+    }
+
+    h3 {
+      font-weight: 100;
+      font-size: $small-heading;
+      margin: 0;
+    }
+  }
+
+  .items {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    .item {
+      border-radius: 10px;
+      width: 360px;
+      height: 200px;
+      background-size: 360px , 200px;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      img {
+        width: 60px;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-weight: 800;
+        margin: 0;
+      }
+    }
+
+    .item:nth-of-type(1) {
+      background-image: url("/images/streaming.png");
+    }
+
+    .item:nth-of-type(2) {
+      background-image: url("/images/ambassador.png");
+
+    }
+
+    .item:nth-of-type(3) {
+      background-image: url("/images/partner.png");
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .container {
+    .items {
+      .item {
+        width: 260px;
+        height: 150px;
+        background-size: 260px , 150px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .container {
+    .heading {
+      h1 {
+        font-size: 26px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    .items {
+      .item {
+        width: 200px;
+        height: 120px;
+        background-size: 200px , 120px;
+        img {
+          width: 45px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .heading {
+      h1 {
+        font-size: 26px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    .items {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      .item {
+        width: 300px;
+        height: 170px;
+        background-size: 300px , 170px;
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+}
