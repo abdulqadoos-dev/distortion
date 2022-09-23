@@ -7,6 +7,7 @@ import FAQ from '../components/home/faq'
 import styles from '../styles/Home.module.css'
 import LeaderBoard from "../components/home/leaderBoard";
 import Copyrights from "../components/footer/copyrights";
+import Footer from "../components/footer/footer";
 
 const Home: NextPage = () => {
     return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
                         <LeaderBoard/>
                         <FAQ/>
                     </main>
+                    <Footer/>
                 </Layout>
             </div>
             <Copyrights/>

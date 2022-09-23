@@ -1,9 +1,9 @@
 import {NextPage} from "next";
 import styles from "./wallet-success.module.scss";
-import buttonStyles from "../../components/ui/button/button.module.scss";
+import buttonStyles from "../../../components/ui/button/button.module.scss";
 import Head from "next/head";
 import {ReactSVG} from 'react-svg'
-import Layout from "../../components/layout/layout";
+import Layout from "../../../components/layout/layout";
 import useTranslation from "next-translate/useTranslation";
 
 
@@ -16,7 +16,7 @@ const WalletSuccess: NextPage = () => {
                 <Head>
                     <title>Distortion</title>
                     <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/favicon.ico"/>
+                    <link rel="icon" href="/public/favicon.ico"/>
                 </Head>
 
                 <Layout>
@@ -38,7 +38,7 @@ const WalletSuccess: NextPage = () => {
                                 </ul>
 
                                 <p>
-                                    *Distortion cannot retrieve your seed phrase. <a href="">Learn more.</a>
+                                    *Distortion cannot retrieve your seed phrase. <a href="pages/wallet/success/index">Learn more.</a>
                                 </p>
                                 <button className={buttonStyles.button}>{t('It\'s all over')}</button>
                                 <button className={buttonStyles.buttonOutline}>

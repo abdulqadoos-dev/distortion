@@ -14,6 +14,7 @@ import Collaboration from "../../components/landingPage/collaboration";
 import Roadmap from "../../components/landingPage/roadmap";
 import LeaderBoard from "../../components/home/leaderBoard";
 import Experience from "../../components/landingPage/experiences";
+import Footer from "../../components/footer/footer";
 
 const Home: NextPage = () => {
     return (
@@ -40,6 +41,8 @@ const Home: NextPage = () => {
                         <Collaboration/>
 
                     </main>
+                    <Footer />
+
                 </Layout>
             </div>
             <Copyrights/>
