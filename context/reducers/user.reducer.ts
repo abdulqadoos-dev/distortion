@@ -10,7 +10,7 @@ export default (state: GlobalState, action: Action): GlobalState => {
 }
 
 const setUser = (state: GlobalState, payload: UserCookie): GlobalState => {
-  return {
+  return <GlobalState>{
     ...state,
     user: {
       isLoggedIn: true,
