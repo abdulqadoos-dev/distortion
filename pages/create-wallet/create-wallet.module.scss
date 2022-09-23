@@ -1,0 +1,65 @@
+@import "styles/base";
+
+.container {
+  width: $container-width;
+  margin: $container-margin;
+  text-align: center;
+  font-family: $primary-font;
+
+  .heading {
+    h1 {
+      font-size: $medium-heading;
+      color: $primary-color;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+
+    div.box {
+      border: 2px solid $light-gray;
+      margin: 20px;
+      width: 500px;
+      padding: 30px;
+      border-radius: 20px;
+      font-size: $medium-paragraph;
+    }
+
+  }
+
+  .button {
+    height: 45px;
+    border-radius: 10px;
+    width: 250px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .heading {
+      h1 {
+        font-size: $large-paragraph;
+      }
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+}
