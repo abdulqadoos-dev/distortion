@@ -136,21 +136,121 @@ const Overview: NextPage = () => {
                                     </div>
 
                                     <div className={styles.step}>
-                                        <ReactSVG src={"/images/icons/wallet.svg"}/>
-                                        <p>Create your Distortion account</p>
-                                        <div>
+                                        <div className={styles.icon}>
+                                            <ReactSVG src={"/images/icons/wallet-full.svg"}/>
+                                        </div>
+                                        <div className={styles.heading}>
+                                            <h3>Create your Distortion account</h3>
+                                        </div>
+
+                                        <div className={styles.experience}>
                                             <span>
-                                                <ReactSVG src={"/images/icons/wallet.svg"}/>
+                                                <ReactSVG src={"/images/icons/trophy.svg"}/>
                                                 100xp
                                             </span>
                                             <span>
-                                                <ReactSVG src={"/images/icons/wallet.svg"}/>
+                                                <ReactSVG src={"/images/icons/reward.svg"}/>
                                                 Reward
                                             </span>
                                         </div>
 
-                                        <p>1/4</p>
+                                        <div className={styles.ratio}>
+                                        </div>
+
                                         <button className={buttonStyles.buttonOutline}>{t('connect')}</button>
+
+                                    </div>
+
+                                    <div className={styles.step}>
+                                        <div className={styles.icon}>
+                                            <ReactSVG src={"/images/icons/discord.svg"}/>
+                                        </div>
+                                        <div className={styles.heading}>
+                                            <h3>Connect your Discord account</h3>
+                                            <p> &bull; Participate to tournaments</p>
+                                            <p> &bull; Obtain your rewards</p>
+                                            <p> &bull; Stay tuned on our last updates</p>
+                                        </div>
+
+                                        <div className={styles.experience}>
+                                            <span>
+                                                <ReactSVG src={"/images/icons/trophy.svg"}/>
+                                                100xp
+                                            </span>
+                                            <span>
+                                                <ReactSVG src={"/images/icons/reward.svg"}/>
+                                                Reward
+                                            </span>
+                                        </div>
+
+                                        <div className={styles.ratio}>
+                                            <span>1 </span> / <span>92   </span>
+                                        </div>
+
+                                        <button className={buttonStyles.buttonOutline}>{t('connect')}</button>
+
+                                    </div>
+
+                                    <div className={styles.step}>
+                                        <div className={styles.icon}>
+                                            <ReactSVG src={"/images/icons/team.svg"}/>
+                                        </div>
+
+                                        <div className={styles.heading}>
+                                            <h3>Create you team</h3>
+                                            <p> &bull; Invite your friends</p>
+                                            <p> &bull; Prepare your team</p>
+                                            <p> &bull; Obtain rewards</p>
+                                        </div>
+
+                                        <div className={styles.experience}>
+                                            <span>
+                                                <ReactSVG src={"/images/icons/trophy.svg"}/>
+                                                100xp
+                                            </span>
+                                            <span>
+                                                <ReactSVG src={"/images/icons/reward.svg"}/>
+                                                Reward
+                                            </span>
+                                        </div>
+
+                                        <div className={styles.ratio}>
+                                            <span>1 </span> / <span>92   </span>
+                                        </div>
+
+                                        <button className={buttonStyles.buttonOutline}>{t('share')}</button>
+
+                                    </div>
+
+                                    <div className={styles.step}>
+                                        <div className={styles.icon}>
+                                            <ReactSVG src={"/images/icons/tournaments.svg"}/>
+                                        </div>
+
+                                        <div className={styles.heading}>
+                                            <h3>Participate 1rst tournament </h3>
+                                            <p> &bull; Invite your friends</p>
+                                            <p> &bull; Prepare your team</p>
+                                            <p> &bull; Obtain rewards</p>
+                                        </div>
+
+                                        <div className={styles.experience}>
+                                            <span>
+                                                <ReactSVG src={"/images/icons/trophy.svg"}/>
+                                                100xp
+                                            </span>
+                                            <span>
+                                                <ReactSVG src={"/images/icons/reward.svg"}/>
+                                                Reward
+                                            </span>
+                                        </div>
+
+                                        <div className={styles.ratio}>
+                                            <span>1 </span> / <span>92   </span>
+                                        </div>
+
+                                        <button className={buttonStyles.buttonOutline}>{t('participate')}</button>
+
                                     </div>
 
                                 </div>
