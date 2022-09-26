@@ -8,6 +8,8 @@ import useTranslation from "next-translate/useTranslation";
 import Footer from "../../../components/footer/footer";
 import CopyRights from "../../../components/footer/copyrights";
 import Image from 'next/image'
+import Games from "../../../components/home/leaderboard/games";
+import ListItems from "../../../components/home/leaderboard/listItems";
 
 const Overview: NextPage = () => {
     const {t, lang} = useTranslation('common')
@@ -129,11 +131,12 @@ const Overview: NextPage = () => {
 
                             <section className={styles.main}>
 
+                                <div className={styles.heading}>
+                                    <h1>Your next steps</h1>
+                                </div>
+
                                 <div className={styles.steps}>
 
-                                    <div className={styles.heading}>
-                                        <h1>Your next steps</h1>
-                                    </div>
 
                                     <div className={styles.step}>
                                         <div className={styles.icon}>
@@ -259,7 +262,6 @@ const Overview: NextPage = () => {
                                     <h1>Your Daily Rewards</h1>
                                 </div>
 
-
                                 <div className={styles.rewards}>
 
 
@@ -348,6 +350,55 @@ const Overview: NextPage = () => {
                                     </div>
 
                                 </div>
+
+                                <section className={styles.tabsContainer}>
+
+                                    <div className={styles.tabs}>
+                                        <span className={styles.active}>Overview</span>
+                                        <span>Tournaments</span>
+                                    </div>
+
+                                    <div className={styles.tabsContent}>
+                                        <div className={styles.gameStats}>
+                                            <div className={styles.heading}>
+                                                <h2>Game Stats </h2>
+                                                <h2>(coming)</h2>
+                                            </div>
+
+                                            <div className={styles.statsCard}>
+                                                <div className={styles.image}>
+                                                    <Image src="/images/valorant-poster.jpg" width="200px" height="300px" layout="intrinsic"/>
+                                                </div>
+
+                                                <div className={styles.stats}>
+                                                    <h1>valorant</h1>
+                                                    <p>matches <span>120</span></p>
+                                                    <hr/>
+                                                    <p>wins <span>10</span></p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div className={styles.contribution}>
+                                            <div className={styles.heading}>
+                                                <h2>your contribution </h2>
+                                                <h2>(coming)</h2>
+                                            </div>
+                                        </div>
+
+                                        <div className={styles.badgeWell}>
+                                            <div className={styles.heading}>
+                                                <h2>badge wall (coming)</h2>
+                                                <h2>(coming)</h2>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </section>
                             </section>
                         </section>
 
