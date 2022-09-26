@@ -127,8 +127,8 @@ const Overview: NextPage = () => {
                                 </div>
                             </section>
 
-                            {/* main content of the page*/}
                             <section className={styles.main}>
+
                                 <div className={styles.steps}>
 
                                     <div className={styles.heading}>
@@ -251,6 +251,100 @@ const Overview: NextPage = () => {
 
                                         <button className={buttonStyles.buttonOutline}>{t('participate')}</button>
 
+                                    </div>
+
+                                </div>
+
+                                <div className={styles.heading}>
+                                    <h1>Your Daily Rewards</h1>
+                                </div>
+
+
+                                <div className={styles.rewards}>
+
+
+                                    <div className={styles.reward}>
+                                        <div className={styles.default}>
+                                        <span className={styles.informationIcon}>
+                                            <ReactSVG src="/images/icons/information.svg"/>
+                                        </span>
+                                            <div className={styles.image}>
+                                                <Image src="/images/reward-box.png" width="180" height="170"
+                                                       layout="intrinsic"/>
+                                            </div>
+                                            <div className={styles.text}>
+                                                <p>REWARD</p>
+                                                <h1>8H</h1>
+                                            </div>
+
+                                        </div>
+                                        <div className={styles.load}>
+                                            <p>load</p>
+                                            <ReactSVG src={"/images/icons/reward-underline.svg"}/>
+                                        </div>
+                                    </div>
+
+
+                                    <div className={styles.reward}>
+                                        <div className={styles.ready}>
+                                        <span className={styles.informationIcon}>
+                                            <ReactSVG src="/images/icons/information.svg"/>
+                                        </span>
+                                            <div className={styles.image}>
+                                                <Image src="/images/reward-box.png" width="180" height="170"
+                                                       layout="intrinsic"/>
+                                            </div>
+                                            <div className={styles.text}>
+                                                <p>REWARD</p>
+                                                <h1>ready</h1>
+                                            </div>
+                                        </div>
+                                        <div className={styles.load}>
+                                            <p>load</p>
+                                            <ReactSVG src={"/images/icons/reward-underline.svg"}/>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.reward}>
+                                        <div className={styles.loading}>
+                                        <span className={styles.informationIcon}>
+                                            <ReactSVG src="/images/icons/information.svg"/>
+                                        </span>
+                                            <div className={styles.image}>
+                                                <Image src="/images/reward-box.png" width="180" height="170"
+                                                       layout="intrinsic"/>
+                                            </div>
+                                            <div className={styles.text}>
+                                                <p>REWARD</p>
+                                                <h1>loading</h1>
+                                            </div>
+
+                                        </div>
+                                        <div className={styles.load}>
+                                            <p>load</p>
+                                            <ReactSVG src={"/images/icons/reward-underline.svg"}/>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.reward}>
+                                        <div className={styles.disabled}>
+                                        <span className={styles.informationIcon}>
+                                            <ReactSVG src="/images/icons/information.svg"/>
+                                        </span>
+                                            <div className={styles.image}>
+                                                <Image src="/images/reward-box.png" width="180" height="170"
+                                                       layout="intrinsic"/>
+                                            </div>
+                                            <div className={styles.text}>
+                                                <p>REWARD</p>
+                                                <h1>8H</h1>
+                                            </div>
+
+                                        </div>
+                                        <div className={styles.load}>
+                                            <p>load</p>
+                                            <ReactSVG src={"/images/icons/reward-underline.svg"}/>
+                                        </div>
                                     </div>
 
                                 </div>
