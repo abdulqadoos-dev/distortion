@@ -1,0 +1,232 @@
+@import "styles/base";
+
+.container {
+
+  .banner {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0)),
+    url('/images/tournament-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    max-width: 1920px;
+  }
+
+  .content {
+    width: $container-width;
+    margin: $container-margin;
+    font-family: $primary-font;
+
+
+    .tournament {
+      display: flex;
+      gap: 50px;
+      align-items: end;
+
+      .image {
+        margin-top: -130px;
+      }
+
+      .information {
+        h4 {
+          margin: 0;
+          font-size: $small-heading;
+        }
+
+        p {
+          margin: 5px;
+          font-size: $large-paragraph;
+        }
+
+        span {
+          font-size: $large-paragraph;
+          color: $secondary-color;
+        }
+      }
+
+    }
+
+    .tabsContainer {
+      margin: 50px 0;
+
+      .tabs {
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 10px;
+
+        span {
+          margin: 8px;
+          font-size: 16px;
+          border-bottom: 1px solid $light-gray;
+          padding-bottom: 10px;
+          color: $light-gray;
+          cursor: pointer;
+          transition: $transition;
+        }
+
+        span:hover, span.active {
+          border-bottom: 1px solid $primary-color;
+          color: white;
+          font-weight: 700;
+          transition: $transition;
+        }
+      }
+
+      .tabsContent {
+        margin: 20px 0;
+
+        .overview {
+          .displayGrid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+          }
+
+          .details {
+            //grid-column: 1 / 6;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid $light-gray;
+            border-radius: 20px;
+            padding: 30px;
+            background-color: $darker-gray;
+            gap: 50px;
+            margin-bottom: 20px;
+
+            .icons {
+              border-right: 3px solid $primary-color;
+              display: flex;
+              gap: 50px;
+              justify-content: center;
+              text-align: center;
+
+              svg {
+                width: 50px;
+                height: 50px;
+              }
+
+              h3 {
+                font-weight: 500;
+                margin: 5px;
+              }
+
+              p {
+                font-size: $small-paragraph;
+                margin: 0;
+                color: $color-gray;
+                opacity: 0.8;
+                font-weight: 100;
+              }
+            }
+
+          }
+
+          .join {
+            width: 500px;
+            border: 2px solid $light-gray;
+            border-radius: 20px;
+            padding: 30px;
+            background-color: $darker-gray;
+            margin-right: 20px;
+
+            .action {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              gap: 10px;
+
+              span {
+                color: $secondary-color;
+              }
+
+              a {
+                color: $primary-color;
+                opacity: 0.8;
+                text-decoration: underline;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+
+            .section {
+              display: flex;
+              align-items: start;
+              opacity: 0.5;
+              margin-bottom: 20px;
+
+              &:hover {
+                opacity: 1;
+              }
+
+              .content {
+                margin: 0;
+
+                h3 {
+                  border-left: 1px solid $secondary-color;
+                  padding: 5px 20px;
+                  margin: 0;
+                  margin-left: -10px !important;
+                  font-size: $small-heading;
+                }
+
+                p {
+                  margin: 10px 0;
+                  padding: 0 10px;
+                }
+
+                span {
+                  color: $secondary-color;
+                  padding: 0 10px;
+                }
+              }
+
+            }
+
+          }
+
+          .table {
+            border: 2px solid $light-gray;
+            border-radius: 20px;
+            padding: 30px;
+            background-color: $darker-gray;
+            text-align: left;
+
+            thead {
+              color: $primary-color;
+
+              th {
+                padding: 20px 0;
+                border-bottom: 1px solid $primary-color;
+              }
+            }
+
+
+            tbody {
+              td {
+                margin: 20px 0;
+              }
+            }
+
+            .playerName {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .image {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $color-gray;
+                border-radius: 50px;
+              }
+            }
+
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+}
