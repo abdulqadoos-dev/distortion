@@ -397,7 +397,7 @@
         .tabsContent {
           margin: 20px 0;
           display: grid;
-          grid-template-columns: 2fr 1fr;
+          grid-template-columns: 3fr 2fr;
           gap: 25px;
 
           .gameStats, .contribution, .badgeWell {
@@ -408,56 +408,76 @@
 
             .heading {
               margin: 10px 0;
+              display: flex;
+              justify-content: space-between;
 
               h2 {
                 margin: 0;
+                font-size: $large-paragraph;
               }
             }
           }
 
 
           .gameStats {
+            .cards {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 20px;
 
-            .statsCard {
-              border-radius: 10px;
-              border: 2px solid $gray;
-              background-color: $darker-gray;
-              width: 200px;
-              padding: 10px;
-              position: relative;
-
-              .image {
+              .statsCard {
                 border-radius: 10px;
-                overflow: clip;
+                border: 2px solid $gray;
+                background-color: $darker-gray;
+                padding: 5px;
+                position: relative;
 
-                img {
-                  filter: grayscale(100%);
-                  opacity: 0.5;
-                }
-              }
+                .image {
+                  border-radius: 10px;
+                  overflow: clip;
 
-
-              .stats {
-                position: absolute;
-                top : 30%;
-                left: 20%;
-                text-align: center;
-                text-transform: uppercase;
-                h1 {
-                  font-size: $large-paragraph;
-                  margin: 10px 0;
-                }
-                p {
-                  font-size: $small-paragraph;
-                  margin: 0;
-                  font-weight: 500;
-                  span {
-                    color: $primary-color;
+                  img {
+                    filter: grayscale(100%);
+                    opacity: 0.5;
                   }
                 }
-              }
 
+
+                .stats {
+                  position: absolute;
+                  text-align: center;
+                  text-transform: uppercase;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+
+                  h1 {
+                    font-size: $small-paragraph;
+                    margin: 10px 0;
+                  }
+                  hr {
+                    width: 50%;
+                  }
+                  p {
+                    font-size: 10px;
+                    margin: 0;
+                    font-weight: 500;
+
+                    span {
+                      color: $primary-color;
+                    }
+                  }
+                }
+
+              }
             }
+
+
           }
 
 

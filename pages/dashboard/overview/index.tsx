@@ -10,12 +10,16 @@ import CopyRights from "../../../components/footer/copyrights";
 import Image from 'next/image'
 import Games from "../../../components/home/leaderboard/games";
 import ListItems from "../../../components/home/leaderboard/listItems";
+import Link from "next/link";
+import buttonStyle from "../../../components/ui/button/button.module.scss";
+import RedeemReward from "./redeem-reward";
 
 const Overview: NextPage = () => {
     const {t, lang} = useTranslation('common')
 
     return (
         <>
+            {/*<RedeemReward/>*/}
             <div className={styles.container}>
                 <Head>
                     <title>Distortion</title>
@@ -361,39 +365,77 @@ const Overview: NextPage = () => {
                                     <div className={styles.tabsContent}>
                                         <div className={styles.gameStats}>
                                             <div className={styles.heading}>
-                                                <h2>Game Stats </h2>
-                                                <h2>(coming)</h2>
+                                                <div>
+                                                    <h2>Game Stats </h2>
+                                                    <h2>(coming)</h2>
+                                                </div>
+                                                <Link href="/">
+                                                    <a className={buttonStyle.viewMore}>{t('view more')} <img
+                                                        src="/images/icons/arrow-right.svg"/></a>
+                                                </Link>
                                             </div>
 
-                                            <div className={styles.statsCard}>
-                                                <div className={styles.image}>
-                                                    <Image src="/images/valorant-poster.jpg" width="200px" height="300px" layout="intrinsic"/>
+                                            <div className={styles.cards}>
+
+                                                <div className={styles.statsCard}>
+                                                    <div className={styles.image}>
+                                                        <Image src="/images/valorant-poster.jpg" width="200px"
+                                                               height="300px" layout="intrinsic"/>
+                                                    </div>
+
+                                                    <div className={styles.stats}>
+
+                                                        <h1>valorant</h1>
+                                                        <p>matches <span>120</span></p>
+                                                        <hr/>
+                                                        <p>wins <span>10</span></p>
+                                                    </div>
+                                                </div>
+                                                <div className={styles.statsCard}>
+                                                    <div className={styles.image}>
+                                                        <Image src="/images/valorant-poster.jpg" width="200px"
+                                                               height="300px" layout="intrinsic"/>
+                                                    </div>
+
+                                                    <div className={styles.stats}>
+                                                        <h1>valorant</h1>
+                                                        <p>matches <span>120</span></p>
+                                                        <hr/>
+                                                        <p>wins <span>10</span></p>
+                                                    </div>
                                                 </div>
 
-                                                <div className={styles.stats}>
-                                                    <h1>valorant</h1>
-                                                    <p>matches <span>120</span></p>
-                                                    <hr/>
-                                                    <p>wins <span>10</span></p>
-                                                </div>
-
                                             </div>
 
-                                        </div>
-
-                                        <div className={styles.contribution}>
-                                            <div className={styles.heading}>
-                                                <h2>your contribution </h2>
-                                                <h2>(coming)</h2>
-                                            </div>
                                         </div>
 
                                         <div className={styles.badgeWell}>
                                             <div className={styles.heading}>
-                                                <h2>badge wall (coming)</h2>
-                                                <h2>(coming)</h2>
+                                                <div>
+                                                    <h2>badge wall</h2>
+                                                    <h2>(coming)</h2>
+                                                </div>
+                                                <Link href="/">
+                                                    <a className={buttonStyle.viewMore}>{t('view more')} <img
+                                                        src="/images/icons/arrow-right.svg"/></a>
+                                                </Link>
                                             </div>
                                         </div>
+
+                                        <div className={styles.contribution}>
+                                            <div className={styles.heading}>
+                                                <div>
+                                                    <h2>your contribution </h2>
+                                                    <h2>(coming)</h2>
+                                                </div>
+                                                <Link href="/">
+                                                    <a className={buttonStyle.viewMore}>{t('view more')} <img
+                                                        src="/images/icons/arrow-right.svg"/></a>
+                                                </Link>
+                                            </div>
+                                        </div>
+
+
 
 
                                     </div>
