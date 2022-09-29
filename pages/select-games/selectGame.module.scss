@@ -1,0 +1,146 @@
+@import "styles/base";
+
+.container {
+  width: $container-width;
+  margin: $container-margin;
+  font-family: $primary-font;
+  border: 2px solid $color-gray;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: $darker-gray;
+
+  .heading {
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      color: $primary-color;
+      margin-bottom: 0;
+    }
+  }
+
+  .content {
+
+    .search {
+      text-align: center;
+      margin: 30px 0;
+
+      input {
+        border-radius: 5px;
+        height: 40px;
+        width: 300px;
+        font-size: $medium-paragraph;
+        padding: 0 20px;
+        border: 2px solid $color-gray;
+        background-color: $black;
+
+      }
+    }
+
+    .actions {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .games {
+      width: 75%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+
+
+      .game {
+        width: 260px;
+        padding: 20px;
+        border: 2px solid $light-gray;
+        text-align: center;
+        border-radius: 20px;
+        object-fit: cover;
+        overflow: clip;
+        background-color: $darker-gray;
+        cursor: pointer;
+
+        &:hover {
+          border: 2px solid rgba($primary-color, 0.6);
+          background-color: rgba($primary-color, 0.2);
+        }
+
+        img {
+          border-radius: 15px;
+        }
+      }
+
+    }
+
+
+  }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+
+  .container {
+    .content {
+      .games {
+        width: 100%;
+        justify-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+  .container {
+    .content {
+      .games {
+        justify-items: center;
+        .game {
+          width: 190px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    .content {
+      .games {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .heading {
+      h1 {
+        font-size: $small-heading;
+      }
+    }
+    .content {
+      .search{
+        input {
+          width: 250px;
+        }
+      }
+      .games {
+        grid-template-columns: 1fr
+      }
+    }
+  }
+
+}
