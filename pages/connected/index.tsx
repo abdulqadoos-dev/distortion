@@ -9,6 +9,7 @@ import LeaderBoard from "../../components/home/leaderBoard";
 import Footer from "../../components/footer/footer";
 import Banner from "../../components/connected/banner";
 import Steps from "../../components/connected/steps";
+import PopularGames from "../../components/connected/popular-games";
 
 const Connected: NextPage = () => {
     return (
@@ -26,6 +27,7 @@ const Connected: NextPage = () => {
                         <Steps/>
                         <UpcomingTournaments/>
                         <LeaderBoard/>
+                        <PopularGames/>
                     </main>
                     <Footer/>
                 </Layout>

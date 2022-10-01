@@ -16,9 +16,13 @@
     grid-template-columns: 1fr 3fr;
     gap: 50px;
     margin: 0 50px;
+    align-items: start;
 
 
     .main {
+      width: 100%;
+      overflow: hidden;
+
       .heading {
         h1 {
           font-size: $medium-heading;
@@ -31,7 +35,7 @@
         .step {
           border-radius: 20px;
           display: grid;
-          grid-template-columns: 1fr 3fr 2fr 1fr 2fr;
+          grid-template-columns: 1fr 3fr 2fr 2fr;
           align-items: center;
           justify-content: space-around;
           border: 2px solid $darker-gray;
@@ -77,6 +81,14 @@
 
           .ratio {
             font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+              margin-left: 20px;
+              align-self: end;
+            }
 
             span:nth-of-type(1) {
               color: $primary-color;
@@ -87,12 +99,17 @@
 
       }
 
+
       .rewards {
         display: flex;
-        gap: 50px;
+        gap: 30px;
+        overflow: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
 
 
         .reward {
+          min-width: 200px;
           width: 200px;
           position: relative;
 
@@ -202,6 +219,11 @@
 
       }
 
+      .rewards::-webkit-scrollbar {
+        display: none;
+
+      }
+
 
       .tabsContainer {
         margin: 50px 0;
@@ -294,9 +316,11 @@
                     font-size: $small-paragraph;
                     margin: 10px 0;
                   }
+
                   hr {
                     width: 50%;
                   }
+
                   p {
                     font-size: 10px;
                     margin: 0;
@@ -319,6 +343,171 @@
       }
 
     }
+
+  }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+
+  .container {
+    .content {
+
+      .main {
+
+        .steps {
+          .step {
+            padding: 20px;
+            gap: 20px;
+            grid-template-columns: 1fr 3fr 1fr 3fr;
+
+            .icon {
+              text-align: center;
+
+              svg {
+                width: 50px;
+                height: 80px;
+
+                path {
+                  fill: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
+
+        .rewards {
+          display: flex;
+          gap: 30px;
+        }
+
+        .tabsContainer {
+          .tabsContent {
+            .gameStats, .contribution, .badgeWell {
+              padding: 20px;
+            }
+
+            .gameStats {
+              .cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+  .container {
+    .content {
+      display: grid;
+      gap: 30px;
+      margin: 0 10px;
+
+      .main {
+
+        .steps {
+          .step {
+            padding: 20px;
+            grid-template-columns: 1fr 3fr;
+
+            .icon {
+              text-align: left;
+
+              svg {
+                width: 50px;
+                height: 80px;
+              }
+            }
+          }
+        }
+
+        .tabsContainer {
+          .tabsContent {
+            grid-template-columns: 1fr;
+
+            .gameStats, .contribution, .badgeWell {
+              padding: 20px;
+            }
+
+            .gameStats {
+              .cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap: 50px;
+      margin: 0 90px;
+      align-items: start;
+    }
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+
+  .container {
+    .banner {
+      img {
+        border-radius: 10px;
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap: 50px;
+      margin: 0 auto;
+      align-items: start;
+
+      .main {
+        .tabsContainer {
+          .tabsContent {
+            .gameStats, .contribution, .badgeWell {
+              padding: 20px;
+            }
+
+            .gameStats {
+              .cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
 
   }
 

@@ -35,7 +35,10 @@ const Steps = () => {
                 </div>
 
                 <div className={styles.card}>
-                    <ReactSVG src={"/images/icons/discord.svg"}/>
+                    <div className={styles.mainIcon}>
+
+                        <ReactSVG src={"/images/icons/discord.svg"}/>
+                    </div>
                     <div className={styles.details}>
                         <h4>Connect your Discord account</h4>
                         <p>&bull; Participate to tournaments</p>
@@ -57,7 +60,11 @@ const Steps = () => {
                 </div>
 
                 <div className={styles.card}>
-                    <ReactSVG src={"/images/icons/team.svg"}/>
+                    <div className={styles.mainIcon}>
+
+                        <ReactSVG src={"/images/icons/team.svg"}/>
+                    </div>
+
                     <div className={styles.details}>
                         <h4>Create you team</h4>
                         <p>&bull; Invite your friends</p>
@@ -79,7 +86,10 @@ const Steps = () => {
                 </div>
 
                 <div className={styles.card}>
-                    <ReactSVG src={"/images/icons/tournaments.svg"}/>
+                    <div className={styles.mainIcon}>
+
+                        <ReactSVG src={"/images/icons/tournaments.svg"}/>
+                    </div>
                     <div className={styles.details}>
                         <h4>Participate 1rst tournament </h4>
                         <p>&bull; Participate to tournaments</p>

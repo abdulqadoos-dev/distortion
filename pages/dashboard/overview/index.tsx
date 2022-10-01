@@ -21,6 +21,7 @@ const Overview: NextPage = () => {
     return (
         <>
             {/*<RedeemReward/>*/}
+
             <div className={styles.container}>
                 <Head>
                     <title>Distortion</title>
@@ -33,9 +34,12 @@ const Overview: NextPage = () => {
                         <section className={styles.banner}>
                             <Image src="/images/overview-banner.jpg" width="1920" height="400px" layout="intrinsic"/>
                         </section>
+
+
+
                         <section className={styles.content}>
 
-                          <Profile/>
+                            <Profile/>
 
                             <section className={styles.main}>
 
@@ -44,7 +48,6 @@ const Overview: NextPage = () => {
                                 </div>
 
                                 <div className={styles.steps}>
-
 
                                     <div className={styles.step}>
                                         <div className={styles.icon}>
@@ -66,9 +69,10 @@ const Overview: NextPage = () => {
                                         </div>
 
                                         <div className={styles.ratio}>
+                                            <div></div>
+                                            <button className={buttonStyles.buttonOutline}>{t('connect')}</button>
                                         </div>
 
-                                        <button className={buttonStyles.buttonOutline}>{t('connect')}</button>
 
                                     </div>
 
@@ -95,10 +99,9 @@ const Overview: NextPage = () => {
                                         </div>
 
                                         <div className={styles.ratio}>
-                                            <span>1 </span> / <span>92   </span>
+                                            <div><span>1 </span> / <span>92   </span></div>
+                                            <button className={buttonStyles.buttonOutline}>{t('connect')}</button>
                                         </div>
-
-                                        <button className={buttonStyles.buttonOutline}>{t('connect')}</button>
 
                                     </div>
 
@@ -126,10 +129,11 @@ const Overview: NextPage = () => {
                                         </div>
 
                                         <div className={styles.ratio}>
-                                            <span>1 </span> / <span>92   </span>
+                                            <div><span>1 </span> / <span>92   </span></div>
+                                            <button className={buttonStyles.buttonOutline}>{t('share')}</button>
+
                                         </div>
 
-                                        <button className={buttonStyles.buttonOutline}>{t('share')}</button>
 
                                     </div>
 
@@ -157,10 +161,11 @@ const Overview: NextPage = () => {
                                         </div>
 
                                         <div className={styles.ratio}>
-                                            <span>1 </span> / <span>92   </span>
+                                            <div><span>1 </span> / <span>92   </span></div>
+                                            <button className={buttonStyles.buttonOutline}>{t('participate')}</button>
                                         </div>
 
-                                        <button className={buttonStyles.buttonOutline}>{t('participate')}</button>
+
 
                                     </div>
 
@@ -172,6 +177,27 @@ const Overview: NextPage = () => {
 
                                 <div className={styles.rewards}>
 
+
+                                    <div className={styles.reward}>
+                                        <div className={styles.default}>
+                                        <span className={styles.informationIcon}>
+                                            <ReactSVG src="/images/icons/information.svg"/>
+                                        </span>
+                                            <div className={styles.image}>
+                                                <Image src="/images/reward-box.png" width="180" height="170"
+                                                       layout="intrinsic"/>
+                                            </div>
+                                            <div className={styles.text}>
+                                                <p>REWARD</p>
+                                                <h1>8H</h1>
+                                            </div>
+
+                                        </div>
+                                        <div className={styles.load}>
+                                            <p>load</p>
+                                            <ReactSVG src={"/images/icons/reward-underline.svg"}/>
+                                        </div>
+                                    </div>
 
                                     <div className={styles.reward}>
                                         <div className={styles.default}>
@@ -208,6 +234,27 @@ const Overview: NextPage = () => {
                                                 <p>REWARD</p>
                                                 <h1>ready</h1>
                                             </div>
+                                        </div>
+                                        <div className={styles.load}>
+                                            <p>load</p>
+                                            <ReactSVG src={"/images/icons/reward-underline.svg"}/>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.reward}>
+                                        <div className={styles.loading}>
+                                        <span className={styles.informationIcon}>
+                                            <ReactSVG src="/images/icons/information.svg"/>
+                                        </span>
+                                            <div className={styles.image}>
+                                                <Image src="/images/reward-box.png" width="180" height="170"
+                                                       layout="intrinsic"/>
+                                            </div>
+                                            <div className={styles.text}>
+                                                <p>REWARD</p>
+                                                <h1>loading</h1>
+                                            </div>
+
                                         </div>
                                         <div className={styles.load}>
                                             <p>load</p>
@@ -338,8 +385,6 @@ const Overview: NextPage = () => {
                                                 </Link>
                                             </div>
                                         </div>
-
-
 
 
                                     </div>
