@@ -39,7 +39,6 @@ const Home: NextPage = () => {
                         <Join/>
                         <FAQ/>
                         <Collaboration/>
-
                     </main>
                     <Footer />
 
