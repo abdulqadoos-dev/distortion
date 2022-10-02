@@ -1,6 +1,7 @@
 import styles from "./roadmap.module.scss"
 import useTranslation from "next-translate/useTranslation";
-import { ReactSVG } from 'react-svg'
+import {ReactSVG} from 'react-svg'
+
 const Roadmap = () => {
     const {t, lang} = useTranslation('common')
 
@@ -15,13 +16,15 @@ const Roadmap = () => {
                     <div className={styles.icon}>
                         <ReactSVG src="/images/icons/pre-launch.svg" alt=""/>
                     </div>
-                    <h3>pre launch</h3>
-                    <small>(ongoing)</small>
-                    <ul>
-                        <li>- Dapp release v0</li>
-                        <li>- First amateur tournaments</li>
-                        <li>- Ambassador Onboarding</li>
-                    </ul>
+                    <div>
+                        <h3>pre launch</h3>
+                        <small>(ongoing)</small>
+                        <ul>
+                            <li>- Dapp release v0</li>
+                            <li>- First amateur tournaments</li>
+                            <li>- Ambassador Onboarding</li>
+                        </ul>
+                    </div>
 
                     <div className={styles.splitter}>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
@@ -35,12 +38,15 @@ const Roadmap = () => {
                     <div className={styles.icon}>
                         <ReactSVG src="/images/icons/launch.svg" alt=""/>
                     </div>
-                    <h3>launch</h3>
-                    <ul>
-                        <li>- Dapp release v0</li>
-                        <li>- First amateur tournaments</li>
-                        <li>- Ambassador Onboarding</li>
-                    </ul>
+                    <div>
+                        <h3>launch</h3>
+                        <ul>
+                            <li>- Dapp release v0</li>
+                            <li>- First amateur tournaments</li>
+                            <li>- Ambassador Onboarding</li>
+                        </ul>
+
+                    </div>
                     <div className={styles.splitter}>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
@@ -53,12 +59,14 @@ const Roadmap = () => {
                     <div className={styles.icon}>
                         <ReactSVG src="/images/icons/nft.svg" alt=""/>
                     </div>
-                    <h3>Token & NFT</h3>
-                    <ul>
-                        <li>- Dapp release v0</li>
-                        <li>- First amateur tournaments</li>
-                        <li>- Ambassador Onboarding</li>
-                    </ul>
+                    <div>
+                        <h3>Token & NFT</h3>
+                        <ul>
+                            <li>- Dapp release v0</li>
+                            <li>- First amateur tournaments</li>
+                            <li>- Ambassador Onboarding</li>
+                        </ul>
+                    </div>
                     <div className={styles.splitter}>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
@@ -69,12 +77,14 @@ const Roadmap = () => {
                     <div className={styles.icon}>
                         <ReactSVG src="/images/icons/scale.svg" alt=""/>
                     </div>
-                    <h3>Scale</h3>
-                    <ul>
-                        <li>- Dapp release v0</li>
-                        <li>- First amateur tournaments</li>
-                        <li>- Ambassador Onboarding</li>
-                    </ul>
+                    <div>
+                        <h3>Scale</h3>
+                        <ul>
+                            <li>- Dapp release v0</li>
+                            <li>- First amateur tournaments</li>
+                            <li>- Ambassador Onboarding</li>
+                        </ul>
+                    </div>
                     <div className={styles.splitter}>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
@@ -85,12 +95,14 @@ const Roadmap = () => {
                     <div className={styles.icon}>
                         <ReactSVG src="/images/icons/improve.svg" alt=""/>
                     </div>
-                    <h3>Improve</h3>
-                    <ul>
-                        <li>- Dapp release v0</li>
-                        <li>- First amateur tournaments</li>
-                        <li>- Ambassador Onboarding</li>
-                    </ul>
+                    <div>
+                        <h3>Improve</h3>
+                        <ul>
+                            <li>- Dapp release v0</li>
+                            <li>- First amateur tournaments</li>
+                            <li>- Ambassador Onboarding</li>
+                        </ul>
+                    </div>
                     <div className={styles.splitter}>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
                         <ReactSVG src={'/images/icons/rm-line.svg'}/>
@@ -101,12 +113,14 @@ const Roadmap = () => {
                     <div className={styles.icon}>
                         <ReactSVG src="/images/icons/expand.svg" alt=""/>
                     </div>
-                    <h3>Expand</h3>
-                    <ul>
-                        <li>- Dapp release v0</li>
-                        <li>- First amateur tournaments</li>
-                        <li>- Ambassador Onboarding</li>
-                    </ul>
+                    <div>
+                        <h3>Expand</h3>
+                        <ul>
+                            <li>- Dapp release v0</li>
+                            <li>- First amateur tournaments</li>
+                            <li>- Ambassador Onboarding</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

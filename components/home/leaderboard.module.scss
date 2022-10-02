@@ -41,6 +41,10 @@
       scrollbar-width: none;
       margin: 20px 0;
     }
+
+    .tabsContent::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .viewMoreLink {
