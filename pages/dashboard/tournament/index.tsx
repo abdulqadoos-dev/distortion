@@ -9,9 +9,6 @@ import Footer from "../../../components/footer/footer";
 import CopyRights from "../../../components/footer/copyrights";
 import Image from 'next/image'
 import Link from "next/link";
-import buttonStyle from "../../../components/ui/button/button.module.scss";
-import Profile from "../../../components/dashboard/profile";
-import {start} from "repl";
 
 const Tournament: NextPage = () => {
     const {t, lang} = useTranslation('common')
@@ -92,113 +89,133 @@ const Tournament: NextPage = () => {
                                         </div>
 
                                         <div className={styles.displayGrid}>
-                                        <div className={styles.join}>
 
-                                            <div className={styles.section}>
-                                                <ReactSVG src={'/images/icons/border-vertical.svg'}/>
-                                                <div className={styles.content}>
-                                                    <h3>Registration</h3>
-                                                    <p>Registration are open</p>
-                                                    <span>{"35 players registered"}</span>
+                                            <div className={styles.join}>
+
+                                                <div className={styles.section}>
+                                                    <ReactSVG src={'/images/icons/border-vertical.svg'}/>
+                                                    <div className={styles.content}>
+                                                        <h3>Registration</h3>
+                                                        <p>Registration are open</p>
+                                                        <span>{"35 players registered"}</span>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div className={styles.section}>
-                                                <ReactSVG src={'/images/icons/border-vertical.svg'}/>
-                                                <div className={styles.content}>
-                                                    <h3>Start</h3>
-                                                    <p>Registration are open</p>
-                                                    <span>{"Sept 09 10:00pm > Sept 15 10PM"}</span>
+                                                <div className={styles.section}>
+                                                    <ReactSVG src={'/images/icons/border-vertical.svg'}/>
+                                                    <div className={styles.content}>
+                                                        <h3>Start</h3>
+                                                        <p>Registration are open</p>
+                                                        <span>{"Sept 09 10:00pm > Sept 15 10PM"}</span>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div className={styles.section}>
-                                                <ReactSVG src={'/images/icons/border-vertical.svg'}/>
-                                                <div className={styles.content}>
-                                                    <h3>Finish</h3>
-                                                    <p>The tournament ended</p>
+                                                <div className={styles.section}>
+                                                    <ReactSVG src={'/images/icons/border-vertical.svg'}/>
+                                                    <div className={styles.content}>
+                                                        <h3>Finish</h3>
+                                                        <p>The tournament ended</p>
+                                                    </div>
                                                 </div>
+
+                                                <div className={styles.action}>
+                                                    <span> Entry Price  <b>50$</b></span>
+                                                    <button className={buttonStyles.button}>{t('join')}</button>
+                                                    <Link href={''}><a>Unregister</a></Link>
+                                                </div>
+
                                             </div>
 
-                                            <div className={styles.action}>
-                                                <span> Entry Price  <b>50$</b></span>
-                                                <button className={buttonStyles.button}>{t('join')}</button>
-                                                <Link href={''}><a>Unregister</a></Link>
-                                            </div>
+                                            <table className={styles.table}>
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>PLAYER</th>
+                                                    <th>LADDER SCORE</th>
+                                                    <th>WINS</th>
+                                                    <th>LOSSES</th>
+                                                    <th>K/D</th>
+                                                    <th>ASSISTS</th>
+                                                    <th>HS%</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td><b>1</b></td>
+                                                    <td className={styles.playerName}><span
+                                                        className={styles.image}></span>Maria Anders
+                                                    </td>
+                                                    <td>25.00</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>0.04</td>
+                                                    <td>31</td>
+                                                    <td>70</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>1</b></td>
+                                                    <td className={styles.playerName}><span
+                                                        className={styles.image}></span>Maria Anders
+                                                    </td>
+                                                    <td>25.00</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>0.04</td>
+                                                    <td>31</td>
+                                                    <td>70</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>1</b></td>
+                                                    <td className={styles.playerName}><span
+                                                        className={styles.image}></span>Maria Anders
+                                                    </td>
+                                                    <td>25.00</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>0.04</td>
+                                                    <td>31</td>
+                                                    <td>70</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>1</b></td>
+                                                    <td className={styles.playerName}><span
+                                                        className={styles.image}></span>Maria Anders
+                                                    </td>
+                                                    <td>25.00</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>0.04</td>
+                                                    <td>31</td>
+                                                    <td>70</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>1</b></td>
+                                                    <td className={styles.playerName}><span
+                                                        className={styles.image}></span>Maria Anders
+                                                    </td>
+                                                    <td>25.00</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>0.04</td>
+                                                    <td>31</td>
+                                                    <td>70</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>1</b></td>
+                                                    <td className={styles.playerName}><span
+                                                        className={styles.image}></span>Maria Anders
+                                                    </td>
+                                                    <td>25.00</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>0.04</td>
+                                                    <td>31</td>
+                                                    <td>70</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
 
-                                        </div>
 
-                                        <table className={styles.table}>
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>PLAYER</th>
-                                                <th>LADDER SCORE</th>
-                                                <th>WINS</th>
-                                                <th>LOSSES</th>
-                                                <th>K/D</th>
-                                                <th>ASSISTS</th>
-                                                <th>HS%</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td><b>1</b></td>
-                                                <td className={styles.playerName}> <span className={styles.image}></span>Maria Anders</td>
-                                                <td>25.00</td>
-                                                <td>5</td>
-                                                <td>0</td>
-                                                <td>0.04</td>
-                                                <td>31</td>
-                                                <td>70</td>
-                                            </tr> <tr>
-                                                <td><b>1</b></td>
-                                                <td className={styles.playerName}> <span className={styles.image}></span>Maria Anders</td>
-                                                <td>25.00</td>
-                                                <td>5</td>
-                                                <td>0</td>
-                                                <td>0.04</td>
-                                                <td>31</td>
-                                                <td>70</td>
-                                            </tr> <tr>
-                                                <td><b>1</b></td>
-                                                <td className={styles.playerName}> <span className={styles.image}></span>Maria Anders</td>
-                                                <td>25.00</td>
-                                                <td>5</td>
-                                                <td>0</td>
-                                                <td>0.04</td>
-                                                <td>31</td>
-                                                <td>70</td>
-                                            </tr> <tr>
-                                                <td><b>1</b></td>
-                                                <td className={styles.playerName}> <span className={styles.image}></span>Maria Anders</td>
-                                                <td>25.00</td>
-                                                <td>5</td>
-                                                <td>0</td>
-                                                <td>0.04</td>
-                                                <td>31</td>
-                                                <td>70</td>
-                                            </tr> <tr>
-                                                <td><b>1</b></td>
-                                                <td className={styles.playerName}> <span className={styles.image}></span>Maria Anders</td>
-                                                <td>25.00</td>
-                                                <td>5</td>
-                                                <td>0</td>
-                                                <td>0.04</td>
-                                                <td>31</td>
-                                                <td>70</td>
-                                            </tr> <tr>
-                                                <td><b>1</b></td>
-                                                <td className={styles.playerName}> <span className={styles.image}></span>Maria Anders</td>
-                                                <td>25.00</td>
-                                                <td>5</td>
-                                                <td>0</td>
-                                                <td>0.04</td>
-                                                <td>31</td>
-                                                <td>70</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
                                         </div>
                                     </div>
 

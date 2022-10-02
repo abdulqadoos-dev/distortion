@@ -1,8 +1,6 @@
 import {NextPage} from "next";
 import styles from "./your-profile.module.scss";
-import buttonStyles from "../../../components/ui/button/button.module.scss";
 import Head from "next/head";
-import {ReactSVG} from 'react-svg'
 import Layout from "../../../components/layout/layout";
 import useTranslation from "next-translate/useTranslation";
 import Footer from "../../../components/footer/footer";
@@ -11,7 +9,6 @@ import Image from 'next/image'
 import Link from "next/link";
 import buttonStyle from "../../../components/ui/button/button.module.scss";
 import Profile from "../../../components/dashboard/profile";
-import {start} from "repl";
 
 const YourProfile: NextPage = () => {
     const {t, lang} = useTranslation('common')

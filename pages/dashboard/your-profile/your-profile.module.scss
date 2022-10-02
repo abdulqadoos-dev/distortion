@@ -16,8 +16,12 @@
     grid-template-columns: 1fr 3fr;
     gap: 50px;
     margin: 0 50px;
+    align-items: start;
 
     .main {
+      width: 100%;
+      overflow: hidden;
+
       .heading {
         h1 {
           font-size: $medium-heading;
@@ -35,7 +39,6 @@
         border: 3px solid $light-gray;
 
         .information {
-
           .userDetails {
             div {
               margin-bottom: 20px;
@@ -68,7 +71,6 @@
               }
             }
           }
-
           .form {
             margin: 20px 0;
 
@@ -96,11 +98,30 @@
 
             }
           }
+        }
 
+        .profileImages {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          text-align: center;
 
+          h4 {
+            font-weight: 400;
+            margin-bottom: 0;
+            text-transform: capitalize;
+          }
+
+          a {
+            color: $primary-color;
+            font-size: 12px;
+          }
+
+          img {
+            border-radius: 10px;
+          }
         }
       }
-
 
       .gameIds {
         margin-bottom: 30px;
@@ -128,29 +149,70 @@
         }
       }
 
-      .profileImages {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        text-align: center;
 
-        h4 {
-          font-weight: 400;
-          margin-bottom: 0;
-          text-transform: capitalize;
-        }
-
-        a {
-          color: $primary-color;
-          font-size: 12px;
-        }
-
-        img {
-          border-radius: 10px;
-        }
-      }
 
     }
+
+  }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+
+  .container {
+    .content {
+      .main {
+        .profile {
+          display: grid;
+          gap: 30px;
+          grid-template-columns: 1fr;
+          .profileImages {
+            grid-row-start: 1;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap: 10px;
+      margin: 0 90px;
+      align-items: start;
+    }
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .banner {
+      img {
+        border-radius: 10px;
+      }
+    }
+    .content {
+      margin: 0 auto;
+      .main {
+        .profile {
+          padding: 30px;
+        }
+      }
+    }
+
 
   }
 
