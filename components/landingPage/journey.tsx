@@ -14,7 +14,7 @@ const Journey = () => {
             <div className={styles.banner}>
                 <div className={styles.content}>
                     <h1>Start your <br/> esport journey</h1>
-                    <p>Try Distortion today and discover the futures of esportTry esport</p>
+                    <p>Make your play time count! </p>
                     <button className={buttonStyles.button}>{t('join-now')}</button>
                 </div>
                 <div className={styles.image}>
