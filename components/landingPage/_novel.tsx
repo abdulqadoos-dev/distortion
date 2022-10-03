@@ -12,7 +12,7 @@ const _novel = () => {
                     <br/> in the Gamifield
                     <br/> world Distortions
                 </h1>
-                <p>Your actions right the futureYour future</p>
+                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
                 <button className={buttonStyles.button}>{t('read the novel')}</button>
             </div>
         </section>
