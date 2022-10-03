@@ -10,10 +10,9 @@ const Header = () => {
             <section className={styles.container}>
                 <div className={styles.filter}/>
                 <div className={styles.content}>
-                    <h1>Play & Earn with your favorite games</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1>Your favorite Games on Steroïds</h1>
+                    <p>Valorize your playtime with the tools to improve, perform and standout
+                       while being rewarded at every step.</p>
                     <button className={buttonStyles.button}>{t('join-now')}</button>
                 </div>
             </section>
