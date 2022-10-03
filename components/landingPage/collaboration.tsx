@@ -14,15 +14,15 @@ const Collaboration = () => {
 
             <div className={styles.items}>
                 <div className={styles.item}>
-                    <img src="/images/icons/email.svg"/>
+                    <a href="mailto: streamer@distortion.gg,ambassador@distortion.gg,partner@distortion.gg"><img src="/images/icons/email.svg"/></a>
                     <p>steamer</p>
                 </div>
                 <div className={styles.item}>
-                    <img src="/images/icons/email.svg"/>
+                    <a href="mailto: streamer@distortion.gg,ambassador@distortion.gg,partner@distortion.gg"><img src="/images/icons/email.svg"/></a>
                     <p>ambassador</p>
                 </div>
                 <div className={styles.item}>
-                    <img src="/images/icons/email.svg"/>
+                    <a href="mailto: streamer@distortion.gg,ambassador@distortion.gg,partner@distortion.gg"><img src="/images/icons/email.svg"/></a>
                     <p>partner</p>
                 </div>
             </div>
