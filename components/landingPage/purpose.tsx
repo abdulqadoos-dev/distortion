@@ -8,8 +8,8 @@ const Purpose = () => {
             <div>
                 <h1>Play with purpose </h1>
                 <h3>winning or losing depends on you.</h3>
-                <p>Your final clutch, the pixel perfect ultimate, the timed <br/>
-                    flashing will grant you more than victory
+                <p>Your final clutch, the pixel perfect ultimate, the timed</br>
+                flashbang will grant you more than victory.
                 </p>
             </div>
 
