@@ -20,10 +20,10 @@
       transition: $transition;
 
 
-      //&:hover > .listItemContent {
-      //  //display: block;
-      //  transition: $transition;
-      //}
+      &:hover > .listItemContent {
+        display: block;
+        transition: $transition;
+      }
 
       &:hover > .listItemHeader img {
         rotate: 180deg;
