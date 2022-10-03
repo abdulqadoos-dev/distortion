@@ -8,7 +8,7 @@ const Journey = () => {
     return (
         <section className={styles.container}>
             <div className={styles.heading}>
-                <h3>Distortion is a community app that increase your </h3>
+                <h3>Distortion is a community dApp that increase your </h3>
                 <h1>gaming experiences</h1>
             </div>
             <div className={styles.banner}>
