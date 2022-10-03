@@ -62,6 +62,14 @@ const Experience = () => {
                             <ReactSVG src={'/images/icons/leagues.svg'}/>
                             <h3>leagues</h3>
                         </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/ingame-tracking.svg'}/>
+                            <h3>in game tracking</h3>
+                        </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/mission.svg'}/>
+                            <h3>mission </h3>
+                        </div>
                     </div>
                 </div>
 
@@ -85,6 +93,14 @@ const Experience = () => {
                         <div className={styles.icon}>
                             <ReactSVG src={'/images/icons/improve.svg'}/>
                             <h3>improve</h3>
+                        </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/matchmaking-system.svg'}/>
+                            <h3>Matchmaking System</h3>
+                        </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/tutorials.svg'}/>
+                            <h3>TUTORIALS</h3>
                         </div>
                     </div>
                 </div>
@@ -112,6 +128,15 @@ const Experience = () => {
                         <div className={styles.icon}>
                             <ReactSVG src={'/images/icons/story.svg'}/>
                             <h3>ongoing story</h3>
+                        </div>
+
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/ladder.svg'}/>
+                            <h3>Performance Ladder</h3>
+                        </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/leagues-experience.svg'}/>
+                            <h3>Amateur Leagues</h3>
                         </div>
                     </div>
                 </div>

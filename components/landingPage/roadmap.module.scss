@@ -70,12 +70,19 @@
 
     }
 
-    .item:hover, .item.active {
+    .item:hover, .item:first-child {
       h2, h3, small {
         color: $primary-color;
       }
+      .splitter {
+        svg {
+          path {
+            stroke: $primary-color;
+          }
+        }
+      }
 
-      .icon {
+      .icon  {
         border: 3px solid $primary-color;
 
         svg {

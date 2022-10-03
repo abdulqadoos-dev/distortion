@@ -1,7 +1,7 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import Layout from '../../components/layout/layout'
-import Slide from '../../components/home/slide'
+import Header from '../../components/home/header'
 import UpcomingTournaments from '../../components/home/upcoming'
 import FAQ from '../../components/home/faq'
 import styles from './landingPage.module.scss'
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 
                 <Layout>
                     <main>
-                        <Slide/>
+                        <Header/>
                         <Journey/>
                         <Novel/>
                         <Experience/>
