@@ -32,7 +32,7 @@ const Navigation = (): JSX.Element => {
                 </li>
                 <li className={getClassName(2)}>
                     {t('header-nav-tournaments')} <br/>
-                    <small> (coming soon)</small>
+                    <sup> (coming soon)</sup>
                 </li>
 
                 <li className={getClassName(3)}>
@@ -46,7 +46,6 @@ const Navigation = (): JSX.Element => {
                 <li className={getClassName(4)}>
                     <Link href="https://distortion.gg/fr/episode-1/"><a>{t('Lightpaper')}</a></Link>
                 </li>
-
 
             </ul>
         </div>

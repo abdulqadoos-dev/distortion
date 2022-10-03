@@ -25,6 +25,12 @@
       font-family: $primary-font;
       border-bottom: 2px solid #0F1214;
       transition: $transition;
+
+      sup {
+        font-size: 10px;
+        position: absolute;
+      }
+
     }
 
     li:hover {

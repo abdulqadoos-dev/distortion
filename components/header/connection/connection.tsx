@@ -8,6 +8,7 @@ import styles from '../../ui/button/button.module.scss'
 import {ActionType, UserOperations} from '../../../types/action'
 import {User, UserCookie, UserData} from '../../../types/user'
 import {failure, Result, success} from '../../../types/result'
+import Link from "next/link";
 
 const Connection = (): JSX.Element => {
     const {t, lang} = useTranslation('common')
@@ -104,10 +105,10 @@ const Connection = (): JSX.Element => {
 
     return (
         <div className={styles.wrapper}>
-            {!globalState.user.isLoggedIn ? <button className={styles.button} onClick={onConnectWallet}>
-                {t('wallet-connect')}
+            {!globalState.user.isLoggedIn ? <button className={styles.button}>
+                <Link href="https://discord.com/distortion" target={'_blank'}><a>{t('join discord')}</a></Link>
             </button> : <button className={styles.button}>
-                {t('signup-login')}
+                {t('join discord')}
             </button>}
         </div>
     )
