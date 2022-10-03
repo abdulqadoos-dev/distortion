@@ -1,6 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
 import {useRouter} from 'next/router'
 import styles from './navigation.module.scss'
+import Link from 'next/link'
 
 const Navigation = (): JSX.Element => {
     const router = useRouter()
@@ -27,14 +28,26 @@ const Navigation = (): JSX.Element => {
             </div>
             <ul>
                 <li className={getClassName(1)}>
-                    {t('header-nav-home')}
+                    <Link href="/"><a>{t('header-nav-home')}</a></Link>
                 </li>
                 <li className={getClassName(2)}>
-                    {t('header-nav-tournaments')}
+                    {t('header-nav-tournaments')} <br/>
+                    <small> (coming soon)</small>
                 </li>
+
                 <li className={getClassName(3)}>
-                    {t('header-nav-games')}
+                    {t('road map')} <br/>
                 </li>
+
+                <li className={getClassName(4)}>
+                    <Link href="https://distortion.gg/fr/episode-1/"><a>{t('Story')}</a></Link>
+                </li>
+
+                <li className={getClassName(4)}>
+                    <Link href="https://distortion.gg/fr/episode-1/"><a>{t('Lightpaper')}</a></Link>
+                </li>
+
+
             </ul>
         </div>
     )

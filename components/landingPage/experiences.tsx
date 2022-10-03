@@ -162,6 +162,18 @@ const Experience = () => {
                             <ReactSVG src={'/images/icons/performance.svg'}/>
                             <h3>performance rewards</h3>
                         </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/loot-box.svg'}/>
+                            <h3>Lootboxes</h3>
+                        </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/cash-prizes.svg'}/>
+                            <h3>Cashprizes</h3>
+                        </div>
+                        <div className={styles.icon}>
+                            <ReactSVG src={'/images/icons/tokens.svg'}/>
+                            <h3>TOKENS</h3>
+                        </div>
                     </div>
                 </div>
         }
