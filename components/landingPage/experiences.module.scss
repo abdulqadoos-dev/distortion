@@ -184,7 +184,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-
+    margin: 30px auto;
     .tabs {
       .header {
         .item {
@@ -202,6 +202,7 @@
       .content {
         .infrastructure, .challenges, .skills, .visibility, .earnings {
           padding: 50px;
+          min-height: auto;
 
           .heading {
             margin-bottom: 50px !important;

@@ -16,8 +16,8 @@
     li {
       color: white;
       margin: 0 15px;
-      padding: 20px 10px;
-      font-size: 20px;
+      padding: 20px 5px;
+      font-size: $medium-paragraph;
       text-align: left;
       display: inline-block;
       vertical-align: middle;
@@ -52,9 +52,9 @@
   .navigation {
     ul {
       li {
-        margin: 0 10px;
+        margin: 0 5px;
         padding: 12px 5px;
-        font-size: 16px;
+        font-size: $small-paragraph;
       }
     }
   }
