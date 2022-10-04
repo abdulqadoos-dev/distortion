@@ -106,7 +106,7 @@ const Connection = (): JSX.Element => {
     return (
         <div className={styles.wrapper}>
             {!globalState.user.isLoggedIn ? <button className={styles.button}>
-                <Link href="https://discord.com/distortion" target={'_blank'}><a>{t('join discord')}</a></Link>
+                <Link href="https://discord.gg/distortion" target={'_blank'}><a>{t('join discord')}</a></Link>
             </button> : <button className={styles.button}>
                 {t('join discord')}
             </button>}

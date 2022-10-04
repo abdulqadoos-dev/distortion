@@ -16,6 +16,9 @@ const Experience = () => {
                     <div className={styles.heading}>
                         <h1>Infrastructure:</h1>
                         <ReactSVG src={'/images/icons/underline.svg'}/>
+                        <h3>Empowering Gamers with the technology, tools,</br>and financial layer to thrive.</h3>
+                        <p>Distortion uses Blockchain to make in-game datas immutable and give Gamers true</br>ownership on their assets & reputation. It fosters fairness and self-determination.</p>
+                    </div>
                     </div>
                     <div className={styles.body}>
                         <div className={styles.icon}>
@@ -46,8 +49,8 @@ const Experience = () => {
                     <div className={styles.heading}>
                         <h1>Challenges:</h1>
                         <ReactSVG src={'/images/icons/underline.svg'}/>
-                        <p>Playing with distortions provides goals to thrive for.</p>
-                        <p>with a fair matching participate to game at stakes, competition and win cash prize</p>
+                          <h3>Playing with Distortion provides a purpose & goals to thrive for.</h3>
+                        <p>Participate in fair and purposeful games to improve, grow the ladder, achieve</br>missions and win cashprizes.</p>
                     </div>
                     <div className={styles.body}>
                         <div className={styles.icon}>
@@ -78,8 +81,8 @@ const Experience = () => {
                     <div className={styles.heading}>
                         <h1>Improve:</h1>
                         <ReactSVG src={'/images/icons/underline.svg'}/>
-                        <h3>Monitor your progress with our data powered tools.</h3>
-                        <p>Identify what to improve and train with mission and fair challenges</p>
+                        <h3>Monitor your progress and benchmark yourself with</br>our data powered tools.</h3>
+                        <p>Identify your flaws and train on them with missions, fair challenges and pro tutorials.</p>
                     </div>
                     <div className={styles.body}>
                         <div className={styles.icon}>
@@ -109,10 +112,8 @@ const Experience = () => {
                     <div className={styles.heading}>
                         <h1>Visibility:</h1>
                         <ReactSVG src={'/images/icons/underline.svg'}/>
-                        <h3>All our events and tournaments are live and streamed.</h3>
-                        <p>In addition to our regular tournaments we organize major events with your favorite players,
-                            streamers and offer you a
-                            chance to play against them in front of the world.
+                        <h3>Don’t Stay unnoticed </br>Join our Leagues & Tournaments with agnostic ladder</h3>
+                        <p>Play alongside streamers, pro players, and the stars of tomorrow in our streamed</br>competitions. Stand out to grow a community, get financed by them or hired.
                         </p>
                     </div>
                     <div className={styles.body}>
@@ -144,9 +145,10 @@ const Experience = () => {
             case "EARNINGS" :
                 return <div className={styles.earnings}>
                     <div className={styles.heading}>
-                        <h1>be rewarded:</h1>
+                        <h1>Earnings:</h1>
                         <ReactSVG src={'/images/icons/underline.svg'}/>
-                        <p>Every steps in your journey will grant you rewards in addition to your own earnings</p>
+                        <h3>Be rewarded for your efforts, perfomances and</br>investments & kickstart your career or side hustle.</h3>
+                        <p>Every step of your journey shall be paved with rewards, performance</br>earnings, and valuable cross-game assets.</p>
                     </div>
                     <div className={styles.body}>
 
@@ -184,8 +186,7 @@ const Experience = () => {
 
             <div className={styles.heading}>
                 <h1>Get the pro experience</h1>
-                <p>Distortions provides the infrastructure to create challenges, skills, <br/> visibility, earnings and
-                    emotions.</p>
+                <p>Distortion provides the infrastructure to reinstate the thrill of the competition, improve your skills, and get access to visibility & earnings.</p>
             </div>
 
             <div className={styles.tabs}>

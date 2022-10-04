@@ -36,7 +36,7 @@ const FAQ = () => {
                     </div>
                     <div className={styles.listItem}>
                         <div className={styles.listItemHeader}>
-                            <p>How to send funds on my wallet ?</p>
+                            <p>How to send funds on my wallet?</p>
                             <img src="/images/icons/chevron-up.svg" alt=""/>
                         </div>
                         <div className={styles.listItemContent}>
@@ -56,7 +56,7 @@ const FAQ = () => {
                     </div>
                     <div className={styles.listItem}>
                         <div className={styles.listItemHeader}>
-                            <p>How to participate to a tournament?</p>
+                            <p>How to claim my rewards?</p>
                             <img src="/images/icons/chevron-up.svg" alt=""/>
                         </div>
                         <div className={styles.listItemContent}>

@@ -18,9 +18,9 @@ const Novel = () => {
                     <div style={{'backgroundImage': `url(${images[0]})`}}>
                         <div className={styles.content}>
                             <h1>Immerse yourself </h1>
-                            <h1>in the Gameified</h1>
+                            <h1>in the Gamified</h1>
                             <h1>world of Distortion</h1>
-                            <p>Your actions write the futureYour future</p>
+                            <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
                             <button className={buttonStyles.button}>{t('read the novel')}</button>
                         </div>
                     </div>
@@ -29,9 +29,9 @@ const Novel = () => {
                     <div style={{'backgroundImage': `url(${images[1]})`}}>
                         <div className={styles.content}>
                             <h1>Immerse yourself </h1>
-                            <h1>in the Gameified</h1>
+                            <h1>in the Gamified</h1>
                             <h1>world of Distortion</h1>
-                            <p>Your actions write the futureYour future</p>
+                            <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
                             <button className={buttonStyles.button}>{t('read the novel')}</button>
                         </div>
                     </div>
@@ -41,9 +41,9 @@ const Novel = () => {
                     <div style={{'backgroundImage': `url(${images[2]})`}}>
                         <div className={styles.content}>
                             <h1>Immerse yourself </h1>
-                            <h1>in the Gameified</h1>
+                            <h1>in the Gamified</h1>
                             <h1>world of Distortion</h1>
-                            <p>Your actions write the futureYour future</p>
+                            <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
                             <button className={buttonStyles.button}>{t('read the novel')}</button>
                         </div>
                     </div>

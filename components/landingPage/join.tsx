@@ -8,7 +8,7 @@ const Join = () => {
         <section className={styles.container}>
             <div>
                 <h1>Join for free now ! </h1>
-                <p>Easy and secureEasy secure</p>
+                <p>Easy, Secure, and fully yours!</p>
                 <button className={buttonStyles.button}>{t('join-now')}</button>
             </div>
         </section>
