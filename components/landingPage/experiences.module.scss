@@ -236,7 +236,7 @@
 
 @media screen and (max-width: 640px) {
   .container {
-    height: 600px;
+    height: 700px;
 
     .heading {
       h1 {
@@ -259,13 +259,6 @@
       }
 
       .content {
-        .challenges, .skills, .visibility, .earnings {
-          .heading {
-            p {
-              font-size: 12px;
-            }
-          }
-        }
 
         .infrastructure, .challenges, .skills, .visibility, .earnings {
           padding: 20px;
@@ -278,7 +271,10 @@
             }
 
             h3 {
-              font-size: $medium-paragraph;
+              font-size: $small-paragraph;
+            }
+            p {
+              font-size: 10px;
             }
           }
 
