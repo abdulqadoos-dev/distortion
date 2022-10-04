@@ -76,6 +76,12 @@
 
 
 @media screen and (max-width: 1280px) {
+  .button {
+    height: 40px;
+    width: 180px;
+    font-weight: 700;
+    font-size: 14px;
+  }
   .buttonOutline {
     width: 150px;
     font-size: 14px;

@@ -184,7 +184,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-
+    margin: 30px auto;
     .tabs {
       .header {
         .item {
@@ -202,6 +202,7 @@
       .content {
         .infrastructure, .challenges, .skills, .visibility, .earnings {
           padding: 50px;
+          min-height: auto;
 
           .heading {
             margin-bottom: 50px !important;
@@ -235,7 +236,7 @@
 
 @media screen and (max-width: 640px) {
   .container {
-    height: 600px;
+    height: 700px;
 
     .heading {
       h1 {
@@ -258,13 +259,6 @@
       }
 
       .content {
-        .challenges, .skills, .visibility, .earnings {
-          .heading {
-            p {
-              font-size: 12px;
-            }
-          }
-        }
 
         .infrastructure, .challenges, .skills, .visibility, .earnings {
           padding: 20px;
@@ -277,7 +271,10 @@
             }
 
             h3 {
-              font-size: $medium-paragraph;
+              font-size: $small-paragraph;
+            }
+            p {
+              font-size: 10px;
             }
           }
 

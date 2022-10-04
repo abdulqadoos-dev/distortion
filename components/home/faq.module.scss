@@ -21,7 +21,6 @@
 
 
       &:hover > .listItemContent {
-        display: block;
         transition: $transition;
       }
 
@@ -76,7 +75,7 @@
         margin-bottom: 10px;
 
         .listItemHeader {
-          font-size: 18px;
+          font-size: 15px;
         }
         .listItemContent {
           font-size: 13px;

@@ -74,6 +74,7 @@
       h2, h3, small {
         color: $primary-color;
       }
+
       .splitter {
         svg {
           path {
@@ -82,7 +83,7 @@
         }
       }
 
-      .icon  {
+      .icon {
         border: 3px solid $primary-color;
 
         svg {
@@ -129,7 +130,6 @@
 }
 
 
-
 @media screen and (max-width: 640px) {
 
   .container {
@@ -138,6 +138,82 @@
         font-size: $small-heading;
         margin: 20px 0;
       }
+    }
+
+    .items {
+      display: grid;
+      justify-items: center;
+
+      .item {
+        gap: 20px;
+
+        h2, h3 {
+          text-transform: uppercase;
+          color: $secondary-color;
+          margin: 0;
+          font-size: $small-paragraph;
+        }
+
+        ul {
+          margin: 15px 0;
+          padding: 0;
+
+          li {
+            list-style: none;
+            font-size: 10px;
+          }
+        }
+
+        p {
+          font-size: $small-paragraph;
+        }
+
+        .icon {
+          width: 60px;
+          height: 60px;
+
+          svg {
+            width: 20px;
+            height: 50px;
+          }
+        }
+
+      }
+
+      .item:nth-of-type(odd) {
+        margin-left: 30px;
+      }
+      .item:nth-of-type(even) {
+        margin-left: -30px;
+      }
+
+      .item:nth-of-type(odd) {
+        .splitter {
+          position: absolute;
+          left: 40px;
+          bottom: -20px;
+          rotate: 90deg;
+
+          svg {
+            width: 120px;
+            height: 3px;
+          }
+        }
+      }
+
+      .item:nth-of-type(even) {
+        .splitter {
+          left: 65px;
+          bottom: -20px;
+          rotate: 90deg;
+
+          svg {
+            width: 120px;
+            height: 3px;
+          }
+        }
+      }
+
     }
   }
 }
