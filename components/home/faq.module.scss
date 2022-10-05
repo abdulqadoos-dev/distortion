@@ -21,6 +21,7 @@
 
 
       &:hover > .listItemContent {
+        display: block;
         transition: $transition;
       }
 
