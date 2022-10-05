@@ -6,7 +6,7 @@ const Roadmap = () => {
     const {t, lang} = useTranslation('common')
 
     return (
-        <section className={styles.container}>
+        <section id="roadmap" className={styles.container}>
             <div className={styles.heading}>
                 <h1>Roadmap</h1>
             </div>
