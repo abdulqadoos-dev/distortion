@@ -2,8 +2,9 @@ import useTranslation from 'next-translate/useTranslation'
 import {useRouter} from 'next/router'
 import styles from './navigation.module.scss'
 import Link from 'next/link'
+import {ReactSVG} from "react-svg";
 
-const Navigation = (): JSX.Element => {
+const Navigation = ({navigation,setState}: any): JSX.Element => {
     const router = useRouter()
     const {t, lang} = useTranslation('common')
     const activeClassName = styles.active
@@ -22,9 +23,11 @@ const Navigation = (): JSX.Element => {
     }
 
     return (
-        <div className={styles.navigation}>
-            <div className={styles.closeNavigation}>
-                <img src="/images/icons/chevron-up.svg" alt=""/>
+        <div className={navigation === "desktop" ? styles.navigation : styles.mobileNavigation}>
+            <div className={styles.closeNavigation}
+                 onClick={() => setState('desktop')}
+            >
+                <ReactSVG src="/images/icons/close.svg" alt=""/>
             </div>
             <ul>
                 <li className={getClassName(1)}>
@@ -36,7 +39,7 @@ const Navigation = (): JSX.Element => {
                 </li>
 
                 <li className={getClassName(3)}>
-                  <Link href="#roadmap"><a>{t('road map')}</a></Link>
+                    <Link href="#roadmap"><a>{t('road map')}</a></Link>
                 </li>
 
                 <li className={getClassName(4)}>
@@ -44,7 +47,7 @@ const Navigation = (): JSX.Element => {
                 </li>
 
                 <li className={getClassName(4)}>
-                    <Link href="https://distortion.gg/fr/episode-1/"><a>{t('Lightpaper')}</a></Link>
+                    <Link href="https://distortionnft.io/wp-content/uploads/2022/10/Blurb-Distortion.pdf"><a>{t('Lightpaper')}</a></Link>
                 </li>
 
             </ul>
