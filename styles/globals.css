@@ -87,7 +87,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    color: #ffffff;
     background: black;
   }
 }
