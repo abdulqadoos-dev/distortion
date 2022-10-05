@@ -21,7 +21,7 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       justify-items: center;
-      margin-top: 50px;
+      margin-top: 25px;
 
       .item {
         text-align: center;
@@ -113,11 +113,11 @@
 
 
       .infrastructure,.challenges, .skills, .visibility, .earnings {
-        min-height: 900px;
-        padding: 100px;
+        min-height: 600px;
+        padding: 70px;
 
         .heading {
-          margin-bottom: 100px !important;
+          margin-bottom: 60px !important;
 
           h1 {
             font-size: $medium-heading;
@@ -131,7 +131,7 @@
         }
 
         .body {
-          padding: 50px;
+          padding: 25px;
           display: grid;
           justify-items: center;
           grid-template-columns: repeat(3, 1fr);
@@ -139,11 +139,11 @@
 
           .icon {
             text-align: center;
-            padding: 20px 0;
+            padding: 05px 0;
 
             svg {
-              width: 75px;
-              height: 75px;
+              width: 60px;
+              height: 60px;
             }
 
             h3 {
@@ -184,7 +184,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    margin: 30px auto;
+
     .tabs {
       .header {
         .item {
@@ -202,7 +202,6 @@
       .content {
         .infrastructure, .challenges, .skills, .visibility, .earnings {
           padding: 50px;
-          min-height: auto;
 
           .heading {
             margin-bottom: 50px !important;
@@ -236,7 +235,7 @@
 
 @media screen and (max-width: 640px) {
   .container {
-    height: 700px;
+    height: 600px;
 
     .heading {
       h1 {
@@ -259,6 +258,13 @@
       }
 
       .content {
+        .challenges, .skills, .visibility, .earnings {
+          .heading {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
 
         .infrastructure, .challenges, .skills, .visibility, .earnings {
           padding: 20px;
@@ -271,10 +277,7 @@
             }
 
             h3 {
-              font-size: $small-paragraph;
-            }
-            p {
-              font-size: 10px;
+              font-size: $medium-paragraph;
             }
           }
 
