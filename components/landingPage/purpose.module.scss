@@ -17,6 +17,8 @@
     font-size: 46px;
     font-weight: 800;
     margin: 0;
+    color: $white;
+    -webkit-text-fill-color: $white;
   }
 
   h3 {
@@ -24,6 +26,8 @@
     text-transform: capitalize;
     font-size: 24px;
     margin: 0;
+    color: $white;
+    -webkit-text-fill-color: $white;
   }
 
   p {

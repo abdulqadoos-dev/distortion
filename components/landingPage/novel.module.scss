@@ -102,10 +102,14 @@
       h1 {
         font-size: $large-paragraph;
         margin: -10px;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
 
       p {
         font-size: $small-paragraph;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
     }
   }

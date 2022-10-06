@@ -12,6 +12,8 @@
       font-size: $medium-heading;
       margin: $heading-margin;
       text-transform: uppercase;
+      color: $white;
+      -webkit-text-fill-color: $white;
     }
   }
 

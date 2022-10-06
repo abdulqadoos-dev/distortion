@@ -39,6 +39,8 @@
       text-transform: uppercase;
       font-weight: 500;
       font-size: 15px;
+      color: $white;
+      -webkit-text-fill-color: $white;
 
       span {
         color: $secondary-color;
@@ -106,6 +108,8 @@
       p {
         font-weight: 800;
         font-size: 17px;
+        color: $white;
+        -webkit-text-fill-color: $white;
 
         span {
           color: $primary-color;
@@ -132,6 +136,8 @@
 
         p {
           font-size: 13px;
+          color: $white;
+          -webkit-text-fill-color: $white;
 
           span {
             color: $primary-color;
@@ -191,6 +197,8 @@
         text-transform: uppercase;
         font-weight: 500;
         font-size: 15px;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
     }
     .cardDateTime {
