@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import styles from "./purpose.module.scss"
-import buttonStyles from "../ui/button/button.module.scss"
+import buttonStyles from "../ui/button/button.module.scss";
 
 const Purpose = () => {
     const {t, lang} = useTranslation('common')
