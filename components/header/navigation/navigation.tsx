@@ -39,7 +39,7 @@ const Navigation = ({navigation,setState}: any): JSX.Element => {
                 </li>
 
                 <li className={getClassName(3)}>
-                    <Link href="#roadmap"><a>{t('road map')}</a></Link>
+                    <Link href="#roadmap"><a>{t('roadmap')}</a></Link>
                 </li>
 
                 <li className={getClassName(4)}>
