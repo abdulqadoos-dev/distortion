@@ -1,7 +1,7 @@
 @import "/styles/base";
 
 .container {
-  margin: 100px auto;
+  margin: 40px auto;
   width: $container-width;
   font-family: $primary-font;
 
@@ -40,9 +40,15 @@
           margin: 0;
         }
 
+        h4 {
+          font-size: 20px;
+          font-weight: 800;
+          margin: 05px;
+        }
+
         svg {
-          width: 55px;
-          height: 55px;          
+          width: 50px;
+          height: 50px;          
         }
 
       }
@@ -112,11 +118,11 @@
 
 
       .infrastructure,.challenges, .skills, .visibility, .earnings {
-        min-height: 600px;
-        padding: 70px;
+        min-height: 550px;
+        padding: 60px;
 
         .heading {
-          margin-bottom: 10px !important;
+          margin-bottom: 05px !important;
 
           h1 {
             font-size: $medium-heading;
