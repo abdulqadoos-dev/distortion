@@ -9,6 +9,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import buttonStyle from "../../../components/ui/button/button.module.scss";
 import Profile from "../../../components/dashboard/profile";
+import HeadSection from "../../../components/ui/Head";
 
 const YourProfile: NextPage = () => {
     const {t, lang} = useTranslation('common')
@@ -16,12 +17,7 @@ const YourProfile: NextPage = () => {
     return (
         <>
             <div className={styles.container}>
-                <Head>
-                    <title>Distortion</title>
-                    <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/favicon.ico"/>
-                </Head>
-
+                <HeadSection title={t('Your Profile')}/>
                 <Layout>
                     <main>
                         <section className={styles.banner}>

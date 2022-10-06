@@ -8,16 +8,17 @@ import styles from '../styles/Home.module.css'
 import LeaderBoard from "../components/home/leaderBoard";
 import Copyrights from "../components/footer/copyrights";
 import Footer from "../components/footer/footer";
+import HeadSection from "../components/ui/Head";
+import useTranslation from "next-translate/useTranslation";
 
 const Home: NextPage = () => {
+    const {t, lang} = useTranslation('common')
+
     return (
         <>
             <div className={styles.container}>
-                <Head>
-                    <title>Distortion</title>
-                    <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/favicon.ico"/>
-                </Head>
+
+                <HeadSection title={t('Home')}/>
 
                 <Layout>
                     <main>

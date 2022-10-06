@@ -9,9 +9,13 @@
     h1 {
       font-size: $large-heading;
       margin: 5px 0;
+      color: $white;
+      -webkit-text-fill-color: $white;
     }
 
     p {
+      color: $white;
+      -webkit-text-fill-color: $white;
       font-weight: 100;
     }
   }
@@ -30,7 +34,7 @@
         padding-bottom: 5px;
         width: 100%;
 
-        &:hover, .active {
+        &:hover, &.active {
           border-bottom: 5px solid $primary-color;
         }
 
@@ -245,6 +249,8 @@
     .heading {
       h1 {
         font-size: $medium-heading;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
     }
 
@@ -253,9 +259,13 @@
         .item {
           h3 {
             font-size: 12px;
+            color: $white;
+            -webkit-text-fill-color: $white;
           }
           h4 {
             font-size: 12px;
+            color: $white;
+            -webkit-text-fill-color: $white;
           }
 
           svg {
@@ -270,6 +280,8 @@
           .heading {
             p {
               font-size: 12px;
+              color: $white;
+              -webkit-text-fill-color: $white;
             }
           }
         }
@@ -282,10 +294,14 @@
 
             h1 {
               font-size: 15px;
+              color: $white;
+              -webkit-text-fill-color: $white;
             }
 
             h3 {
               font-size: $medium-paragraph;
+              color: $white;
+              -webkit-text-fill-color: $white;
             }
           }
 
@@ -304,10 +320,14 @@
 
               h3 {
                 font-size: 10px;
+                color: $white;
+                -webkit-text-fill-color: $white;
               }
 
               h4 {
                 font-size: 10px;
+                color: $white;
+                -webkit-text-fill-color: $white;
               }
 
             }

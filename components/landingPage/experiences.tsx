@@ -113,7 +113,7 @@ const Experience = () => {
                     <div className={styles.heading}>
                         <h1>Visibility:</h1>
                         <ReactSVG src={'/images/icons/underline.svg'}/>
-                        <h3>Don’t Stay unnoticed </br>Join our Leagues & Tournaments with agnostic ladde</h3>
+                        <h3>Don’t Stay unnoticed Join our Leagues & Tournaments with agnostic ladde</h3>
                         <p>Play alongside streamers, pro players, and the stars of tomorrow in our streamed 
                         competitions. Stand out to grow a community, get financed by them or hired.</p>
                     </div>
@@ -194,35 +194,35 @@ const Experience = () => {
             <div className={styles.tabs}>
                 <div className={styles.header}>
                     <div
-                        className={styles.item}
+                        className={`${styles.item}  ${activeExperienceTab === "TOOLS" && styles.active}`}
                         onClick={() => setActiveExperienceTab("TOOLS")}
                     >
                         <ReactSVG src={'/images/icons/tools.svg'}/>
                         <h4>Tools</h4>
                     </div>
                     <div
-                        className={styles.item}
+                        className={`${styles.item}  ${activeExperienceTab === "CHALLENGES" && styles.active}`}
                         onClick={() => setActiveExperienceTab("CHALLENGES")}
                     >
                         <ReactSVG src={'/images/icons/challenges.svg'}/>
                         <h4>Challenges</h4>
                     </div>
                     <div
-                        className={styles.item}
+                        className={`${styles.item}  ${activeExperienceTab === "SKILLS" && styles.active}`}
                         onClick={() => setActiveExperienceTab("SKILLS")}
                     >
                         <ReactSVG src={'/images/icons/skills.svg'}/>
                         <h4>Skills</h4>
                     </div>
                     <div
-                        className={styles.item}
+                         className={`${styles.item}  ${activeExperienceTab === "VISIBILITY" && styles.active}`}
                         onClick={() => setActiveExperienceTab("VISIBILITY")}
                     >
                         <ReactSVG src={'/images/icons/visibility.svg'}/>
                         <h4>Visibility</h4>
                     </div>
                     <div
-                        className={styles.item}
+                         className={`${styles.item}  ${activeExperienceTab === "EARNINGS" && styles.active}`}
                         onClick={() => setActiveExperienceTab("EARNINGS")}
                     >
                         <ReactSVG src={'/images/icons/earnings.svg'}/>

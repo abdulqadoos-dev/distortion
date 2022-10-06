@@ -15,16 +15,16 @@ import Roadmap from "../../components/landingPage/roadmap";
 import LeaderBoard from "../../components/home/leaderBoard";
 import Experience from "../../components/landingPage/experiences";
 import Footer from "../../components/footer/footer";
+import HeadSection from "../../components/ui/Head";
+import useTranslation from "next-translate/useTranslation";
 
 const Home: NextPage = () => {
+    const {t, lang} = useTranslation('common')
+
     return (
         <>
             <div className={styles.container}>
-                <Head>
-                    <title>Distortion</title>
-                    <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/favicon.ico"/>
-                </Head>
+                <HeadSection title={t('Join')}/>
 
                 <Layout>
                     <main>

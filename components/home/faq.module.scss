@@ -20,15 +20,6 @@
       transition: $transition;
 
 
-      &:hover > .listItemContent {
-        display: block;
-        transition: $transition;
-      }
-
-      &:hover > .listItemHeader img {
-        rotate: 180deg;
-        transition: $transition;
-      }
 
       .listItemHeader {
         color: $primary-color;
@@ -44,11 +35,21 @@
         }
       }
 
+      .listItemHeaderActive img {
+        rotate: 180deg;
+        transition: $transition;
+      }
+
       .listItemContent {
         font-size: 15px;
         padding-bottom: 20px;
         display: none;
       }
+      .listItemContentActive {
+        display: block;
+      }
+
+
 
     }
   }

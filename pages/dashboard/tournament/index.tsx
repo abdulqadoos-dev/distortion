@@ -9,6 +9,7 @@ import Footer from "../../../components/footer/footer";
 import CopyRights from "../../../components/footer/copyrights";
 import Image from 'next/image'
 import Link from "next/link";
+import HeadSection from "../../../components/ui/Head";
 
 const Tournament: NextPage = () => {
     const {t, lang} = useTranslation('common')
@@ -16,11 +17,7 @@ const Tournament: NextPage = () => {
     return (
         <>
             <div className={styles.container}>
-                <Head>
-                    <title>Distortion</title>
-                    <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/favicon.ico"/>
-                </Head>
+                <HeadSection title={t('Dashboard Tournament')}/>
 
                 <Layout>
                     <main>

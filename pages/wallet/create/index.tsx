@@ -5,6 +5,7 @@ import Head from "next/head";
 import {ReactSVG} from 'react-svg'
 import Layout from "../../../components/layout/layout";
 import useTranslation from "next-translate/useTranslation";
+import HeadSection from "../../../components/ui/Head";
 
 
 const RecoverPassword: NextPage = () => {
@@ -13,11 +14,7 @@ const RecoverPassword: NextPage = () => {
     return (
         <>
             <div className={styles.container}>
-                <Head>
-                    <title>Distortion</title>
-                    <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/public/favicon.ico"/>
-                </Head>
+                <HeadSection title={t('Create Wallet')}/>
 
                 <Layout>
                     <main>

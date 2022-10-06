@@ -4,6 +4,7 @@ import buttonStyles from "../../components/ui/button/button.module.scss";
 import Head from "next/head";
 import Layout from "../../components/layout/layout";
 import useTranslation from "next-translate/useTranslation";
+import HeadSection from "../../components/ui/Head";
 
 
 const Signup: NextPage = () => {
@@ -12,11 +13,7 @@ const Signup: NextPage = () => {
     return (
         <>
             <div className={styles.container}>
-                <Head>
-                    <title>Distortion</title>
-                    <meta name="description" content="Distortion Dashboard"/>
-                    <link rel="icon" href="/favicon.ico"/>
-                </Head>
+                <HeadSection title={t('Signup')}/>
 
                 <Layout>
                     <main>

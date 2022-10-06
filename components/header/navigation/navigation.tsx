@@ -4,7 +4,7 @@ import styles from './navigation.module.scss'
 import Link from 'next/link'
 import {ReactSVG} from "react-svg";
 
-const Navigation = ({navigation,setState}: any): JSX.Element => {
+const Navigation = ({navigation, setState}: any): JSX.Element => {
     const router = useRouter()
     const {t, lang} = useTranslation('common')
     const activeClassName = styles.active
@@ -16,7 +16,7 @@ const Navigation = ({navigation,setState}: any): JSX.Element => {
             case 2:
                 return (router.pathname === '/tournaments') ? activeClassName : ''
             case 3:
-                return (router.pathname === '/games') ? activeClassName : ''
+                return (router.pathname === '/landing-page') ? activeClassName : ''
             default:
                 return ''
         }
@@ -34,12 +34,12 @@ const Navigation = ({navigation,setState}: any): JSX.Element => {
                     <Link href="/"><a>{t('header-nav-home')}</a></Link>
                 </li>
                 <li className={getClassName(2)}>
-                    {t('header-nav-tournaments')} <br/>
-                    <sup> (coming soon)</sup>
+                    <Link href="/"><a> {t('header-nav-tournaments')} <br/>
+                        <sup> (coming soon)</sup></a></Link>
                 </li>
 
                 <li className={getClassName(3)}>
-                    <Link href="#roadmap"><a>{t('roadmap')}</a></Link>
+                    <Link href="/landing-page#roadmap"><a>{t('roadmap')}</a></Link>
                 </li>
 
                 <li className={getClassName(4)}>
@@ -47,7 +47,8 @@ const Navigation = ({navigation,setState}: any): JSX.Element => {
                 </li>
 
                 <li className={getClassName(4)}>
-                    <Link href="https://distortionnft.io/wp-content/uploads/2022/10/Light-Paper-V6b.pdf"><a>{t('Lightpaper')}</a></Link>
+                    <Link
+                        href="https://distortionnft.io/wp-content/uploads/2022/10/Light-Paper-V6b.pdf"><a>{t('Lightpaper')}</a></Link>
                 </li>
 
             </ul>
