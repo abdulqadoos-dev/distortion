@@ -43,11 +43,11 @@ const Navigation = ({navigation,setState}: any): JSX.Element => {
                 </li>
 
                 <li className={getClassName(4)}>
-                    <Link href="https://distortion.gg/fr/episode-1/"><a>{t('Story')}</a></Link>
+                    <Link href="https://distortionnft.io/fr/episode-1/"><a>{t('Story')}</a></Link>
                 </li>
 
                 <li className={getClassName(4)}>
-                    <Link href="https://distortionnft.io/wp-content/uploads/2022/10/Blurb-Distortion.pdf"><a>{t('Lightpaper')}</a></Link>
+                    <Link href="https://distortionnft.io/wp-content/uploads/2022/10/Light-Paper-V6b.pdf"><a>{t('Lightpaper')}</a></Link>
                 </li>
 
             </ul>
