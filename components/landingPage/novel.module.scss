@@ -91,3 +91,22 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin: $container-margin;
+
+    .content {
+      padding: 15px;
+
+      h1 {
+        font-size: $large-paragraph;
+        margin: -10px;
+      }
+
+      p {
+        font-size: $small-paragraph;
+      }
+    }
+  }
+}

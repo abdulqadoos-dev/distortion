@@ -16,3 +16,10 @@
     width: 150px;
   }
 }
+
+
+@media screen and (max-width: 320px) {
+  .logo img {
+    width: 100px;
+  }
+}

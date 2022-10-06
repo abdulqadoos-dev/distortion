@@ -98,6 +98,13 @@
   .container {
     margin: $container-margin;
     width: $container-width;
+    height: 300px;
+
+
+    .filter {
+      width: 100%;
+      height: 300px;
+    }
 
     .filter {
       opacity: 0.7;
@@ -108,6 +115,30 @@
     .content {
       width: 95%;
       padding: 15px;
+
+      h1 {
+        font-size: $small-heading;
+      }
+
+      p {
+        font-size: $small-paragraph;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    height: 300px;
+    margin: 0 auto;
+    .filter {
+      width: 100%;
+      height: 300px;
+    }
+
+    .content {
+      width: 100%;
+      padding: 10px;
 
       h1 {
         font-size: $small-heading;

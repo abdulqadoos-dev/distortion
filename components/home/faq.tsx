@@ -2,7 +2,7 @@ import styles from './faq.module.scss'
 import useTranslation from "next-translate/useTranslation";
 import {useState} from "react";
 
-const FAQ = () : JSX.Element => {
+const FAQ = () => {
     const {t, lang} = useTranslation('common')
 
     const [activeTab, setActiveTab] = useState<number>(0)
@@ -76,4 +76,4 @@ const FAQ = () : JSX.Element => {
     )
 }
 
-export default FAQ;
+export default FAQ

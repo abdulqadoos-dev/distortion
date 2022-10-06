@@ -183,6 +183,7 @@
       .item:nth-of-type(odd) {
         margin-left: 30px;
       }
+
       .item:nth-of-type(even) {
         margin-left: -30px;
       }
@@ -214,6 +215,26 @@
         }
       }
 
+    }
+  }
+
+
+  @media screen and (max-width: 320px) {
+
+    .container {
+
+
+      .items {
+
+        .item:nth-of-type(odd) {
+          margin-left: 0;
+        }
+
+        .item:nth-of-type(even) {
+          margin-left: 0;
+        }
+
+      }
     }
   }
 }
