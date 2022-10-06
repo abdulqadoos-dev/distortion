@@ -1,0 +1,34 @@
+@import "styles/base";
+
+.container {
+  margin: $container-margin;
+  font-family: $primary-font;
+  width: $container-width;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+
+  .container {
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+
+  }
+
+}

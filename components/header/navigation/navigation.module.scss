@@ -16,8 +16,8 @@
     li {
       color: white;
       margin: 0 15px;
-      padding: 20px 10px;
-      font-size: 20px;
+      padding: 20px 5px;
+      font-size: $medium-paragraph;
       text-align: left;
       display: inline-block;
       vertical-align: middle;
@@ -25,6 +25,12 @@
       font-family: $primary-font;
       border-bottom: 2px solid #0F1214;
       transition: $transition;
+
+      sup {
+        font-size: 10px;
+        position: absolute;
+      }
+
     }
 
     li:hover {
@@ -42,40 +48,85 @@
 }
 
 
+
+
+
+.mobileNavigation {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: $black;
+  z-index: 20;
+
+  .closeNavigation {
+    text-align: right;
+
+    svg {
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      color: white;
+      margin: 0 15px;
+      padding: 20px 5px;
+      font-size: $medium-paragraph;
+      text-align: left;
+      vertical-align: middle;
+      text-transform: uppercase;
+      font-family: $primary-font;
+      border-bottom: 2px solid #0F1214;
+      transition: $transition;
+
+      sup {
+        font-size: 10px;
+        position: absolute;
+      }
+
+    }
+
+    li:hover {
+      cursor: pointer;
+      border-bottom: 2px solid $primary-color;
+      transition: $transition;
+    }
+
+    .active {
+      font-weight: 600;
+      border-bottom: 2px solid $primary-color;
+      transition: $transition;
+    }
+  }
+}
+
+
+
+
 @media screen and (max-width: 1280px) {
   .navigation {
     ul {
       li {
-        margin: 0 10px;
+        margin: 0 5px;
         padding: 12px 5px;
-        font-size: 16px;
+        font-size: $small-paragraph;
       }
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .navigation {
-    height: 100vh;
-    border: 1px solid green;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: $black;
-    z-index: 4;
     display: none;
-
-    .closeNavigation {
-      display: block;
-    }
-
-    ul {
-      text-align: center;
-
-      li {
-        display: block;
-      }
-    }
   }
 }
+
+

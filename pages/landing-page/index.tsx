@@ -1,7 +1,7 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import Layout from '../../components/layout/layout'
-import Slide from '../../components/home/slide'
+import Header from '../../components/home/header'
 import UpcomingTournaments from '../../components/home/upcoming'
 import FAQ from '../../components/home/faq'
 import styles from './landingPage.module.scss'
@@ -14,6 +14,7 @@ import Collaboration from "../../components/landingPage/collaboration";
 import Roadmap from "../../components/landingPage/roadmap";
 import LeaderBoard from "../../components/home/leaderBoard";
 import Experience from "../../components/landingPage/experiences";
+import Footer from "../../components/footer/footer";
 
 const Home: NextPage = () => {
     return (
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
 
                 <Layout>
                     <main>
-                        <Slide/>
+                        <Header/>
                         <Journey/>
                         <Novel/>
                         <Experience/>
@@ -38,8 +39,9 @@ const Home: NextPage = () => {
                         <Join/>
                         <FAQ/>
                         <Collaboration/>
-
                     </main>
+                    <Footer />
+
                 </Layout>
             </div>
             <Copyrights/>

@@ -1,0 +1,116 @@
+@import "styles/base";
+
+.container {
+  width: $container-width;
+  margin: $container-margin;
+  text-align: center;
+  font-family: $primary-font;
+
+  .heading {
+    h1 {
+      font-size: $small-heading;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+
+    label {
+      font-size: $small-paragraph;
+      color: $color-gray;
+    }
+
+    input:not([type='checkbox']) {
+      display: block;
+      width: 300px;
+      margin: 10px 0;
+      height: 50px;
+      border: 2px solid $light-gray;
+      border-radius: 5px;
+      color: $color-gray;
+      text-align: center;
+      font-size: $medium-paragraph;
+      padding: 0 10px;
+      background: $gray;
+
+      &:hover {
+        border: 2px solid $primary-color;
+      }
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input[type='checkbox'] {
+        margin: 5px;
+        height: 25px;
+        padding: 20px;
+        width: 15px;
+      }
+
+      label {
+        font-size: $small-paragraph;
+        color: $color-gray;
+      }
+    }
+
+    button {
+      height: 45px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .container {
+    .content {
+
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .content {
+
+    button {
+      width: 200px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    .heading {
+      h1 {
+        font-size: $large-paragraph;
+      }
+    }
+
+    .content {
+
+
+      button {
+        width: 100%;
+      }
+
+    }
+  }
+
+}

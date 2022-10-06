@@ -1,0 +1,226 @@
+@import "styles/base";
+
+.profile {
+  border: 2px solid $gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: -100px;
+  z-index: 2;
+  background-color: $black;
+
+  .header {
+    display: grid;
+    grid-template-columns: 3fr 5fr 2fr;
+    gap: 5px;
+    align-items: center;
+
+    .image {
+      border: 2px solid $primary-color;
+      border-radius: 11px;
+      width: 80px;
+      height: 80px;
+      overflow: clip;
+    }
+
+    .bio {
+      h3 {
+        font-size: $large-paragraph;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      p {
+        font-size: $small-paragraph;
+        text-transform: uppercase;
+        color: $secondary-color;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      span {
+        margin-top: 5px;
+        display: inline-block;
+        background: $primary-color;
+        font-size: 11px;
+        color: $black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+    }
+
+    .rank {
+      border: 1px solid $primary-color;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: $primary-color;
+      rotate: 45deg;
+
+      span {
+        font-weight: 600;
+        display: inline-block;
+        rotate: 315deg;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 35px;
+    font-size: $small-paragraph;
+    text-transform: capitalize;
+    border-radius: 5px;
+  }
+
+  .stats {
+
+    .list {
+      margin: 20px 0;
+
+      .points, .performance, .ratio {
+        border: 2px solid $gray;
+        border-radius: 10px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 12px;
+      }
+
+      .points span {
+        color: $primary-color;
+      }
+
+      .performance div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .ratio div {
+        span:nth-of-type(1) {
+          color: $primary-color;
+        }
+
+        span:nth-of-type(2) {
+          color: $secondary-color;
+        }
+      }
+
+
+    }
+  }
+
+  .leaderboard {
+    .row {
+      display: flex;
+      font-size: 12px;
+      gap: 5px;
+      text-align: center;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid $primary-color;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .points span {
+        color: $primary-color;
+      }
+
+      .performance div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .ratio div {
+        width: 100px;
+
+        span:nth-of-type(1) {
+          color: $primary-color;
+        }
+
+        span:nth-of-type(2) {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+
+  .profile {
+    margin-top: -90px;
+
+    .header {
+      .bio {
+        h3 {
+          font-size: $medium-paragraph;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .profile {
+    margin-top: -50px;
+    .header {
+      grid-template-columns: 2fr 6fr 1fr;
+    }
+
+    .leaderboard {
+      .row {
+        font-size: $small-paragraph;
+        gap: 10px;
+        padding: 10px 0;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .profile {
+    margin-top: 10px;
+    .header {
+      grid-template-columns: 2fr 4fr 1fr;
+    }
+
+
+  }
+
+
+}

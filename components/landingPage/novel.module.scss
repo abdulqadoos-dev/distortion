@@ -1,27 +1,93 @@
-@import "/styles/base";
+@import '/styles/base';
 
 .container {
+  border-radius: 50px;
   margin: $container-margin;
-  margin-top: 100px !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  background-image: url("/images/novel-banner.jpg");
-  background-size: cover;
-  height: 300px;
-  display: flex;
-  text-align: right;
-  align-items: center;
-  justify-content: end;
-  padding: 0 100px;
+  width: 100%;
   font-family: $primary-font;
+
+
+  .eachSlideEffect > div {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    height: 600px;
+  }
+
+  .content {
+    width: 95%;
+    padding: 0 50px;
+    z-index: 2;
+    text-align: right;
+
+    h1 {
+      margin: 0;
+      font-size: $large-heading;
+    }
+
+    p {
+      font-size: $large-paragraph;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+  .container {
+
+    .eachSlideEffect > div {
+      height: 450px;
+    }
+
+    .content {
+      width: 85%;
+
+      h1 {
+        font-size: $large-heading;
+      }
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    .eachSlideEffect > div {
+      height: 300px;
+    }
+
+    .content {
+      padding: 0 25px;
+
+      h1 {
+        font-size: 35px;
+        line-height: 35px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
-
   .container {
-    justify-content: center;
-    text-align: center;
-    padding: 0 10px;
-  }
+    margin: $container-margin;
 
+    .content {
+      width: 95%;
+      padding: 15px;
+
+      h1 {
+        font-size: $small-heading;
+      }
+
+      p {
+        font-size: $small-paragraph;
+      }
+    }
+  }
 }

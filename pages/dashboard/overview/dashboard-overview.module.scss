@@ -1,0 +1,514 @@
+@import "styles/base";
+
+.container {
+  width: $container-width;
+  margin: $container-margin;
+  font-family: $primary-font;
+
+  .banner {
+    img {
+      border-radius: 25px;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+    margin: 0 50px;
+    align-items: start;
+
+
+    .main {
+      width: 100%;
+      overflow: hidden;
+
+      .heading {
+        h1 {
+          font-size: $medium-heading;
+          text-transform: uppercase;
+        }
+      }
+
+      .steps {
+
+        .step {
+          border-radius: 20px;
+          display: grid;
+          grid-template-columns: 1fr 3fr 2fr 2fr;
+          align-items: center;
+          justify-content: space-around;
+          border: 2px solid $darker-gray;
+          padding: 20px 50px;
+          background-color: rgba($darker-gray, 0.7);
+          margin: 20px 0;
+
+          &:hover {
+            background-color: rgba($secondary-color, 0.2);
+          }
+
+          .icon svg {
+            width: 80px;
+            height: 80px;
+
+            path {
+              fill: $primary-color;
+            }
+          }
+
+          .heading {
+            h3 {
+              font-weight: 500;
+              font-size: $large-paragraph;
+              margin: 10px 0;
+            }
+
+            p {
+              font-size: $small-paragraph;
+              margin: 3px;
+              font-weight: 100;
+            }
+
+          }
+
+          .experience span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: $small-paragraph;
+            margin-bottom: 5px;
+          }
+
+          .ratio {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+              margin-left: 20px;
+              align-self: end;
+            }
+
+            span:nth-of-type(1) {
+              color: $primary-color;
+            }
+          }
+
+        }
+
+      }
+
+
+      .rewards {
+        display: flex;
+        gap: 30px;
+        overflow: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+
+
+        .reward {
+          min-width: 200px;
+          width: 200px;
+          position: relative;
+
+          .load {
+            p {
+              border: 2px solid $primary-color;
+              padding: 5px 10px;
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: $small-paragraph;
+              color: $primary-color;
+              margin-bottom: 0;
+            }
+          }
+
+          .default, .ready, .loading, .disabled {
+            border-radius: 10px 10px 10px 0;
+            border: 2px solid $primary-color;
+            overflow: clip;
+            text-align: center;
+
+            .informationIcon {
+              text-align: right;
+              position: absolute;
+              right: 0;
+              top: 0;
+
+              svg {
+                margin: 10px;
+              }
+            }
+
+            .image {
+              margin: 25px 25px 5px;
+            }
+
+            .text {
+              text-transform: uppercase;
+              color: $black;
+              font-weight: 700;
+              margin-bottom: 20px;
+
+              p {
+                font-size: $medium-paragraph;
+                margin: 0;
+              }
+
+              h1 {
+                font-size: $medium-heading;
+                line-height: $medium-heading;
+                margin: -5px;
+              }
+            }
+          }
+
+          .default {
+            background-image: linear-gradient($black, $primary-color);
+          }
+
+          .ready {
+            background-image: linear-gradient($black, $secondary-color);
+
+            .text {
+              h1 {
+                font-size: $small-heading;
+              }
+            }
+          }
+
+          .loading {
+            background-image: linear-gradient(rgba($primary-color, 1), rgba($secondary-color, 0.8));
+
+            .text {
+              h1 {
+                font-size: $small-heading;
+              }
+            }
+          }
+
+          .disabled {
+            background-image: linear-gradient($black, rgba($white, 0.5));
+            border: 2px solid $light-gray;
+
+            .informationIcon {
+              svg {
+                stroke: $darker-gray;
+
+                path {
+                  fill: $darker-gray;;
+                }
+              }
+            }
+
+            .image img {
+              filter: grayscale(100%);
+            }
+
+            .text {
+              h1 {
+                font-size: $small-heading;
+              }
+            }
+          }
+
+        }
+
+
+      }
+
+      .rewards::-webkit-scrollbar {
+        display: none;
+
+      }
+
+
+      .tabsContainer {
+        margin: 50px 0;
+
+        .tabs {
+          border-bottom: 1px solid $light-gray;
+          padding-bottom: 10px;
+
+          span {
+            margin: 8px;
+            font-size: 16px;
+            border-bottom: 1px solid $light-gray;
+            padding-bottom: 10px;
+            color: $light-gray;
+            cursor: pointer;
+            transition: $transition;
+          }
+
+          span:hover, span.active {
+            border-bottom: 1px solid $primary-color;
+            color: white;
+            font-weight: 700;
+            transition: $transition;
+          }
+        }
+
+        .tabsContent {
+          margin: 20px 0;
+          display: grid;
+          grid-template-columns: 3fr 2fr;
+          gap: 25px;
+
+          .gameStats, .contribution, .badgeWell {
+            border-radius: 10px;
+            border: 2px solid $gray;
+            background-color: $darker-gray;
+            padding: 30px;
+
+            .heading {
+              margin: 10px 0;
+              display: flex;
+              justify-content: space-between;
+
+              h2 {
+                margin: 0;
+                font-size: $large-paragraph;
+              }
+            }
+          }
+
+
+          .gameStats {
+            .cards {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 20px;
+
+              .statsCard {
+                border-radius: 10px;
+                border: 2px solid $gray;
+                background-color: $darker-gray;
+                padding: 5px;
+                position: relative;
+
+                .image {
+                  border-radius: 10px;
+                  overflow: clip;
+
+                  img {
+                    filter: grayscale(100%);
+                    opacity: 0.5;
+                  }
+                }
+
+
+                .stats {
+                  position: absolute;
+                  text-align: center;
+                  text-transform: uppercase;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+
+                  h1 {
+                    font-size: $small-paragraph;
+                    margin: 10px 0;
+                  }
+
+                  hr {
+                    width: 50%;
+                  }
+
+                  p {
+                    font-size: 10px;
+                    margin: 0;
+                    font-weight: 500;
+
+                    span {
+                      color: $primary-color;
+                    }
+                  }
+                }
+
+              }
+            }
+
+
+          }
+
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+
+  .container {
+    .content {
+
+      .main {
+
+        .steps {
+          .step {
+            padding: 20px;
+            gap: 20px;
+            grid-template-columns: 1fr 3fr 1fr 3fr;
+
+            .icon {
+              text-align: center;
+
+              svg {
+                width: 50px;
+                height: 80px;
+
+                path {
+                  fill: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
+
+        .rewards {
+          display: flex;
+          gap: 30px;
+        }
+
+        .tabsContainer {
+          .tabsContent {
+            .gameStats, .contribution, .badgeWell {
+              padding: 20px;
+            }
+
+            .gameStats {
+              .cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+  .container {
+    .content {
+      display: grid;
+      gap: 30px;
+      margin: 0 10px;
+
+      .main {
+
+        .steps {
+          .step {
+            padding: 20px;
+            grid-template-columns: 1fr 3fr;
+
+            .icon {
+              text-align: left;
+
+              svg {
+                width: 50px;
+                height: 80px;
+              }
+            }
+          }
+        }
+
+        .tabsContainer {
+          .tabsContent {
+            grid-template-columns: 1fr;
+
+            .gameStats, .contribution, .badgeWell {
+              padding: 20px;
+            }
+
+            .gameStats {
+              .cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap: 50px;
+      margin: 0 90px;
+      align-items: start;
+    }
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+
+  .container {
+    .banner {
+      img {
+        border-radius: 10px;
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap: 50px;
+      margin: 0 auto;
+      align-items: start;
+
+      .main {
+        .tabsContainer {
+          .tabsContent {
+            .gameStats, .contribution, .badgeWell {
+              padding: 20px;
+            }
+
+            .gameStats {
+              .cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+}

@@ -1,7 +1,7 @@
 @import "/styles/base";
 
 .container {
-  margin: 100px auto;
+  margin: 40px auto;
   width: $container-width;
   font-family: $primary-font;
 
@@ -21,13 +21,13 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       justify-items: center;
-      margin-top: 50px;
+      margin-top: 20px;
 
       .item {
         text-align: center;
         cursor: pointer;
         border-bottom: 5px solid $gray;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
         width: 100%;
 
         &:hover, .active {
@@ -40,83 +40,89 @@
           margin: 0;
         }
 
+        h4 {
+          font-size: 20px;
+          font-weight: 800;
+          margin: 05px;
+        }
+
         svg {
-          width: 55px;
-          height: 55px;
-          margin-bottom: 10px;
+          width: 50px;
+          height: 50px;          
         }
 
       }
     }
 
     .content {
-      .infrastructure {
-        min-height: 900px;
-        padding: 100px;
+      //.infrastructure {
+      //  min-height: 900px;
+      //  padding: 100px;
+      //
+      //  .heading {
+      //    margin-bottom: 100px !important;
+      //
+      //    h1 {
+      //      margin: 0;
+      //      font-size: $medium-heading;
+      //      text-transform: uppercase;
+      //    }
+      //  }
+      //
+      //  //.body {
+      //  //  display: grid;
+      //  //  justify-items: center;
+      //  //  grid-template-columns: repeat(5, 1fr);
+      //  //
+      //  //  .icon {
+      //  //    text-align: center;
+      //  //    padding: 20px 0;
+      //  //
+      //  //    svg {
+      //  //      width: 100px;
+      //  //      height: 80px;
+      //  //    }
+      //  //
+      //  //    h3 {
+      //  //      text-transform: uppercase;
+      //  //    }
+      //  //  }
+      //  //
+      //  //  .icon:nth-of-type(1) {
+      //  //    grid-column-start: 1;
+      //  //    grid-column-end: 3;
+      //  //  }
+      //  //
+      //  //  .icon:nth-of-type(2) {
+      //  //    grid-column-start: 4;
+      //  //    grid-column-end: 6;
+      //  //  }
+      //  //
+      //  //  .icon:nth-of-type(3) {
+      //  //    grid-column-start: 1;
+      //  //    grid-column-end: 6;
+      //  //  }
+      //  //
+      //  //
+      //  //  .icon:nth-of-type(4) {
+      //  //    grid-column-start: 1;
+      //  //    grid-column-end: 3;
+      //  //  }
+      //  //
+      //  //  .icon:nth-of-type(5) {
+      //  //    grid-column-start: 4;
+      //  //    grid-column-end: 6;
+      //  //  }
+      //  //}
+      //}
+
+
+      .infrastructure,.challenges, .skills, .visibility, .earnings {
+        min-height: 550px;
+        padding: 60px;
 
         .heading {
-          margin-bottom: 100px !important;
-
-          h1 {
-            margin: 0;
-            font-size: $medium-heading;
-            text-transform: uppercase;
-          }
-        }
-
-        .body {
-          display: grid;
-          justify-items: center;
-          grid-template-columns: repeat(5, 1fr);
-
-          .icon {
-            text-align: center;
-            padding: 20px 0;
-
-            svg {
-              width: 100px;
-              height: 80px;
-            }
-
-            h3 {
-              text-transform: uppercase;
-            }
-          }
-
-          .icon:nth-of-type(1) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-          }
-
-          .icon:nth-of-type(2) {
-            grid-column-start: 4;
-            grid-column-end: 6;
-          }
-
-          .icon:nth-of-type(3) {
-            grid-column-start: 1;
-            grid-column-end: 6;
-          }
-
-
-          .icon:nth-of-type(4) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-          }
-
-          .icon:nth-of-type(5) {
-            grid-column-start: 4;
-            grid-column-end: 6;
-          }
-        }
-      }
-
-      .challenges, .skills, .visibility, .earnings {
-        min-height: 900px;
-        padding: 100px;
-
-        .heading {
-          margin-bottom: 100px !important;
+          margin-bottom: 05px !important;
 
           h1 {
             font-size: $medium-heading;
@@ -130,18 +136,19 @@
         }
 
         .body {
-          padding: 50px;
+          padding: 10px;
           display: grid;
-          justify-items: start;
+          justify-items: center;
           grid-template-columns: repeat(3, 1fr);
+
 
           .icon {
             text-align: center;
-            padding: 20px 0;
+            padding: 05px 0;
 
             svg {
-              width: 100px;
-              height: 80px;
+              width: 60px;
+              height: 60px;
             }
 
             h3 {
@@ -247,6 +254,9 @@
           h3 {
             font-size: 12px;
           }
+          h4 {
+            font-size: 12px;
+          }
 
           svg {
             width: 30px;
@@ -271,7 +281,7 @@
             margin-bottom: 20px !important;
 
             h1 {
-              font-size: $large-paragraph;
+              font-size: 15px;
             }
 
             h3 {
@@ -288,11 +298,15 @@
               padding: 0;
 
               svg {
-                width: 50px;
+                width: 40px;
                 height: 40px;
               }
 
               h3 {
+                font-size: 10px;
+              }
+
+              h4 {
                 font-size: 10px;
               }
 

@@ -8,21 +8,21 @@ const Collaboration = () => {
         <section className={styles.container}>
 
             <div className={styles.heading}>
-                <h1>Do you want to know more about collaboration ?</h1>
+                <h1>Accompany us in disrupting the Gaming space</h1>
                 <h3>Contact us</h3>
             </div>
 
             <div className={styles.items}>
                 <div className={styles.item}>
-                    <img src="/images/icons/email.svg"/>
-                    <p>steamer</p>
+                    <a href="mailto: streamer@distortion.gg"><img src="/images/icons/email.svg"/></a>
+                    <p>streamer</p>
                 </div>
                 <div className={styles.item}>
-                    <img src="/images/icons/email.svg"/>
+                    <a href="mailto: ambassador@distortion.gg"><img src="/images/icons/email.svg"/></a>
                     <p>ambassador</p>
                 </div>
                 <div className={styles.item}>
-                    <img src="/images/icons/email.svg"/>
+                    <a href="mailto: partner@distortion.gg"><img src="/images/icons/email.svg"/></a>
                     <p>partner</p>
                 </div>
             </div>

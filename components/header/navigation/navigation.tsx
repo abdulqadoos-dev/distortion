@@ -1,8 +1,10 @@
 import useTranslation from 'next-translate/useTranslation'
 import {useRouter} from 'next/router'
 import styles from './navigation.module.scss'
+import Link from 'next/link'
+import {ReactSVG} from "react-svg";
 
-const Navigation = (): JSX.Element => {
+const Navigation = ({navigation,setState}: any): JSX.Element => {
     const router = useRouter()
     const {t, lang} = useTranslation('common')
     const activeClassName = styles.active
@@ -21,20 +23,33 @@ const Navigation = (): JSX.Element => {
     }
 
     return (
-        <div className={styles.navigation}>
-            <div className={styles.closeNavigation}>
-                <img src="/images/icons/chevron-up.svg" alt=""/>
+        <div className={navigation === "desktop" ? styles.navigation : styles.mobileNavigation}>
+            <div className={styles.closeNavigation}
+                 onClick={() => setState('desktop')}
+            >
+                <ReactSVG src="/images/icons/close.svg" alt=""/>
             </div>
             <ul>
                 <li className={getClassName(1)}>
-                    {t('header-nav-home')}
+                    <Link href="/"><a>{t('header-nav-home')}</a></Link>
                 </li>
                 <li className={getClassName(2)}>
-                    {t('header-nav-tournaments')}
+                    {t('header-nav-tournaments')} <br/>
+                    <sup> (coming soon)</sup>
                 </li>
+
                 <li className={getClassName(3)}>
-                    {t('header-nav-games')}
+                    <Link href="#roadmap"><a>{t('roadmap')}</a></Link>
                 </li>
+
+                <li className={getClassName(4)}>
+                    <Link href="https://distortionnft.io/fr/episode-1/"><a>{t('Story')}</a></Link>
+                </li>
+
+                <li className={getClassName(4)}>
+                    <Link href="https://distortionnft.io/wp-content/uploads/2022/10/Light-Paper-V6b.pdf"><a>{t('Lightpaper')}</a></Link>
+                </li>
+
             </ul>
         </div>
     )
