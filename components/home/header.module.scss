@@ -9,8 +9,8 @@
   border-radius: 50px;
   margin: $container-margin;
   width: $container-width;
+  overflow: hidden;
   position: relative;
-  overflow: clip;
   font-family: $primary-font;
 
 
@@ -42,6 +42,10 @@
     }
   }
 
+}
+
+.container {
+  -webkit-transform:translateZ(0);
 }
 
 
