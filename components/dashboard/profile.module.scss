@@ -27,6 +27,8 @@
         font-size: $large-paragraph;
         font-weight: 400;
         margin: 0;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
 
       p {
@@ -62,6 +64,8 @@
         font-weight: 600;
         display: inline-block;
         rotate: 315deg;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
     }
   }
@@ -89,6 +93,7 @@
         font-weight: 600;
         margin-top: 10px;
         font-size: 12px;
+        color: $white;
       }
 
       .points span {
@@ -129,7 +134,7 @@
       align-items: center;
       padding: 10px 0;
       border-bottom: 1px solid $primary-color;
-
+      color: $white;
       img {
         width: 50px;
         height: 50px;

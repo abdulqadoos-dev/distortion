@@ -81,6 +81,8 @@
   .cardContent p {
     line-height: 25px;
     font-size: 17px;
+    color: $white;
+    -webkit-text-fill-color: $white;
   }
 
   .cardFooter {

@@ -21,7 +21,7 @@ const Overview: NextPage = () => {
 
     return (
         <>
-            {/*<RedeemReward/>*/}
+            <RedeemReward/>
 
             <div className={styles.container}>
                 <HeadSection title={t('Dashboard Overview')}/>

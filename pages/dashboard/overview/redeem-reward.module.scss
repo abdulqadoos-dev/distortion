@@ -31,6 +31,10 @@
         font-size: $small-paragraph;
 
       }
+      h1{
+        color: $white;
+        -webkit-text-fill-color: $white;
+      }
 
       margin-bottom: 50px;
     }
@@ -55,11 +59,15 @@
           margin: 5px;
           font-size: $small-heading;
           font-weight: 600;
+          color: $white;
+          -webkit-text-fill-color: $white;
         }
 
         h3 {
           margin: 0;
           font-weight: 600;
+          color: $white;
+          -webkit-text-fill-color: $white;
 
         }
 

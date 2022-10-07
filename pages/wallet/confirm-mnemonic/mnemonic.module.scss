@@ -13,6 +13,10 @@
       color: $primary-color;
     }
 
+    p {
+      color: $white;
+      -webkit-text-fill-color: $white;
+    }
   }
 
   .content {
@@ -109,14 +113,15 @@
 
       .selectedOptionsContainer {
         width: 100%;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .optionsContainer {
         width: 100%;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
       }
+
       button {
         width: 100%;
       }

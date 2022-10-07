@@ -17,6 +17,10 @@
       color: $primary-color;
       margin-bottom: 0;
     }
+    p{
+      color: $white;
+      -webkit-text-fill-color: $white;
+    }
   }
 
   .content {
@@ -40,6 +44,7 @@
     .actions {
       text-align: center;
       margin-top: 30px;
+      color: $white;
     }
 
     .games {

@@ -17,6 +17,8 @@
     font-weight: 500;
     font-size: $medium-heading;
     align-items: center;
+    color: $white;
+    -webkit-text-fill-color: $white;
     svg {
       path {
         fill: $secondary-color;

@@ -23,10 +23,14 @@
     h1 {
       margin: 0;
       font-size: $large-heading;
+      color: $white;
+      -webkit-text-fill-color: $white;
     }
 
     p {
       font-size: $large-paragraph;
+      color: $white;
+      -webkit-text-fill-color: $white;
     }
   }
 
@@ -102,14 +106,10 @@
       h1 {
         font-size: $large-paragraph;
         margin: -10px;
-        color: $white;
-        -webkit-text-fill-color: $white;
       }
 
       p {
         font-size: $small-paragraph;
-        color: $white;
-        -webkit-text-fill-color: $white;
       }
     }
   }

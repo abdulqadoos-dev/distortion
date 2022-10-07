@@ -46,6 +46,8 @@
         font-size: 15px;
         padding-bottom: 20px;
         display: none;
+        color: $white;
+        -webkit-text-fill-color: $white;
       }
       .listItemContentActive {
         display: block;

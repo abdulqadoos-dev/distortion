@@ -7,6 +7,7 @@
   margin-right: 0 !important;
   background-image: url("/images/purpose-banner.jpg");
   background-size: cover;
+  background-position: center center;
   height: 400px;
   display: flex;
   align-items: center;
@@ -33,6 +34,8 @@
   p {
     font-weight: 200;
     font-size: 15px;
+    color: $white;
+    -webkit-text-fill-color: $white;
   }
 }
 
@@ -43,6 +46,8 @@
     text-align: center;
     padding: 0 10px;
     margin-top: 30px !important;
+    background-position: center right;
+
 
 
     h1 {
@@ -68,7 +73,9 @@
     padding: 0 10px;
     margin-top: 30px !important;
     background-size: cover;
-    background-position:  760px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     h1 {
       font-size: 28px;
       margin-bottom: 10px;

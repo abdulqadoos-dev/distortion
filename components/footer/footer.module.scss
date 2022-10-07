@@ -25,6 +25,8 @@
       font-size: 15px;
       font-weight: 500;
       transition: $transition;
+      color: $white;
+      -webkit-text-fill-color: $white;
 
       &:hover {
         color: $primary-color;

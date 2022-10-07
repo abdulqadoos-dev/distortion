@@ -16,7 +16,7 @@ const Navigation = ({navigation, setState}: any): JSX.Element => {
             case 2:
                 return (router.pathname === '/tournaments') ? activeClassName : ''
             case 3:
-                return (router.pathname === '/landing-page') ? activeClassName : ''
+                return (router.pathname === '/roadmap') ? activeClassName : ''
             default:
                 return ''
         }
@@ -39,7 +39,7 @@ const Navigation = ({navigation, setState}: any): JSX.Element => {
                 </li>
 
                 <li className={getClassName(3)}>
-                    <Link href="/landing-page#roadmap"><a>{t('roadmap')}</a></Link>
+                    <Link href="#roadmap"><a>{t('roadmap')}</a></Link>
                 </li>
 
                 <li className={getClassName(4)}>
