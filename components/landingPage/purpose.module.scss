@@ -39,6 +39,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    background-image: url("/images/purpose-mobile.jpeg");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+}
+
 @media screen and (max-width: 640px) {
 
   .container {
@@ -46,7 +55,10 @@
     text-align: center;
     padding: 0 10px;
     margin-top: 30px !important;
-    background-position: center right;
+    background-image: url("/images/purpose-mobile.jpeg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
 
 
 
@@ -72,8 +84,9 @@
     text-align: center;
     padding: 0 10px;
     margin-top: 30px !important;
+    background-image: url("/images/purpose-mobile.jpeg");
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
 
     h1 {
