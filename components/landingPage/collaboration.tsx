@@ -8,7 +8,7 @@ const Collaboration = () => {
         <section className={styles.container}>
 
             <div className={styles.heading}>
-                <h1>Accompany us in disrupting the Gaming space</h1>
+                <h1>Create the Future of Gaming with us</h1>
                 <h3>Contact us</h3>
             </div>
 
