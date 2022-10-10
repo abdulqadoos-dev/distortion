@@ -5,6 +5,7 @@
   margin: $container-margin;
   width: 100%;
   font-family: $primary-font;
+  position: relative;
 
 
   .eachSlideEffect > div {
@@ -15,10 +16,12 @@
   }
 
   .content {
-    width: 95%;
+    width: 100%;
     padding: 0 50px;
     z-index: 2;
     text-align: right;
+    position: absolute;
+    top: 20%;
 
     h1 {
       margin: 0;
@@ -41,14 +44,13 @@
   .container {
 
     .eachSlideEffect > div {
-      height: 450px;
+      height: 500px;
     }
 
     .content {
-      width: 85%;
 
       h1 {
-        font-size: $large-heading;
+        font-size: $medium-heading;
       }
 
     }
@@ -59,11 +61,11 @@
 @media screen and (max-width: 768px) {
   .container {
     .eachSlideEffect > div {
-      height: 300px;
+      height: 400px;
     }
 
     .content {
-      padding: 0 25px;
+      padding: 0 50px;
 
       h1 {
         font-size: 35px;
@@ -80,10 +82,11 @@
 @media screen and (max-width: 640px) {
   .container {
     margin: $container-margin;
-
+    .eachSlideEffect > div {
+      height: 300px;
+    }
     .content {
-      width: 95%;
-      padding: 15px;
+      top: 12%;
 
       h1 {
         font-size: $small-heading;
@@ -101,7 +104,7 @@
     margin: $container-margin;
 
     .content {
-      padding: 15px;
+      padding: 40px;
 
       h1 {
         font-size: $large-paragraph;

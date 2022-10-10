@@ -13,42 +13,62 @@ const Novel = () => {
     ];
     return (
         <section className={styles.container}>
+            {/*<Slide>*/}
+            {/*    <div className={styles.eachSlideEffect}>*/}
+            {/*        <div style={{'backgroundImage': `url(${images[0]})`}}>*/}
+            {/*            <div className={styles.content}>*/}
+            {/*                <h1>Immerse yourself </h1>*/}
+            {/*                <h1>in the Gamified</h1>*/}
+            {/*                <h1>world of Distortion</h1>*/}
+            {/*                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>*/}
+            {/*                <button className={buttonStyles.button}>{t('read the novel')}</button>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.eachSlideEffect}>*/}
+            {/*        <div style={{'backgroundImage': `url(${images[1]})`}}>*/}
+            {/*            <div className={styles.content}>*/}
+            {/*                <h1>Immerse yourself </h1>*/}
+            {/*                <h1>in the Gamified</h1>*/}
+            {/*                <h1>world of Distortion</h1>*/}
+            {/*                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>*/}
+            {/*                <button className={buttonStyles.button}>{t('read the novel')}</button>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+
+            {/*    <div className={styles.eachSlideEffect}>*/}
+            {/*        <div style={{'backgroundImage': `url(${images[2]})`}}>*/}
+            {/*            <div className={styles.content}>*/}
+            {/*                <h1>Immerse yourself </h1>*/}
+            {/*                <h1>in the Gamified</h1>*/}
+            {/*                <h1>world of Distortion</h1>*/}
+            {/*                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>*/}
+            {/*                <button className={buttonStyles.button}>{t('read the novel')}</button>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+
+            {/*</Slide> */}
+
+            <div className={styles.content}>
+                <h1>Immerse yourself </h1>
+                <h1>in the Gamified</h1>
+                <h1>world of Distortion</h1>
+                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
+                <button className={buttonStyles.button}>{t('read the novel')}</button>
+            </div>
+
             <Slide>
                 <div className={styles.eachSlideEffect}>
-                    <div style={{'backgroundImage': `url(${images[0]})`}}>
-                        <div className={styles.content}>
-                            <h1>Immerse yourself </h1>
-                            <h1>in the Gamified</h1>
-                            <h1>world of Distortion</h1>
-                            <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
-                            <button className={buttonStyles.button}>{t('read the novel')}</button>
-                        </div>
-                    </div>
+                    <div style={{'backgroundImage': `url(${images[0]})`}}></div>
                 </div>
                 <div className={styles.eachSlideEffect}>
-                    <div style={{'backgroundImage': `url(${images[1]})`}}>
-                        <div className={styles.content}>
-                            <h1>Immerse yourself </h1>
-                            <h1>in the Gamified</h1>
-                            <h1>world of Distortion</h1>
-                            <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
-                            <button className={buttonStyles.button}>{t('read the novel')}</button>
-                        </div>
-                    </div>
+                    <div style={{'backgroundImage': `url(${images[1]})`}}></div>
                 </div>
-
                 <div className={styles.eachSlideEffect}>
-                    <div style={{'backgroundImage': `url(${images[2]})`}}>
-                        <div className={styles.content}>
-                            <h1>Immerse yourself </h1>
-                            <h1>in the Gamified</h1>
-                            <h1>world of Distortion</h1>
-                            <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
-                            <button className={buttonStyles.button}>{t('read the novel')}</button>
-                        </div>
-                    </div>
+                    <div style={{'backgroundImage': `url(${images[2]})`}}></div>
                 </div>
-
             </Slide>
 
         </section>
