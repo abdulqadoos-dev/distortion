@@ -11,7 +11,7 @@ const Purpose = () => {
             <div>
                 <h1>Play with purpose </h1>
                 <h3>winning or losing depends on you.</h3>
-                <p>Your final clutch, the pixel perfect ultimate, the timed flashbang will grant you more than victory.</p>
+                <p>Your final clutch, the pixel perfect ultimate, or a well timed flashbang, will grant you more than victory.</p>
                 <button className={buttonStyles.button}>
                     <Link href="https://discord.gg/distortion" target={'_blank'}><a>{t('join now')}</a></Link>
                 </button>
