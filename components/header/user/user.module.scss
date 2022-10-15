@@ -1,0 +1,136 @@
+@import '../../../styles/base';
+
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: $primary-font;
+
+
+  .content {
+    width: 200px;
+
+    .borderBottom {
+      height: 5px;
+      background-color: $color-gray;
+      border: 2px solid $secondary-color;
+      width: 80%;
+      margin: 5px 0;
+    }
+
+    .level {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 5px;
+
+      p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .levelIcon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: $primary-color;
+      }
+    }
+
+    .xp {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+
+      .points {
+        position: relative;
+        width: 200px;
+
+        .xpBackground {
+          height: 20px;
+          background-color: $gray;
+          position: absolute;
+          left: 0;
+          width: 100%;
+        }
+
+        .xpBackgroundActive {
+          height: 20px;
+          background-color: $primary-color;
+          width: 80%;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        p {
+          margin: 0;
+          position: absolute;
+          color: $black;
+          font-weight: 700;
+          padding: 0 5px;
+          font-size: 11px;
+          line-height: 20px;
+          width: 80%;
+          text-align: center;
+        }
+
+      }
+
+      .notification {
+        svg {
+          width: 20px;
+          height: 15px;
+        }
+      }
+
+
+    }
+
+  }
+
+  .image {
+    width: 55px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .image {
+      width: 45px;
+    }
+    .content {
+      width: 150px;
+      .borderBottom {
+        width: 110px;
+      }
+      .xp {
+        .points {
+          width: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+}

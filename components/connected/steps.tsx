@@ -20,6 +20,9 @@ const Steps = () => {
                     </div>
                     <div className={styles.details}>
                         <h4>Create your Distortion account</h4>
+                        <p>&bull; Participate to tournaments</p>
+                        <p>&bull; Obtain your rewards</p>
+                        <p>&bull; Stay tuned on our last updates</p>
                         <div className={styles.actions}>
                             <div className={styles.icon}>
                                 <ReactSVG src={"/images/icons/trophy.svg"}/>
@@ -29,6 +32,7 @@ const Steps = () => {
                                 <ReactSVG src={"/images/icons/reward.svg"}/>
                                 <p>100 xp</p>
                             </div>
+                            <div className={styles.ratio}><span>1</span>/4</div>
                             <button className={buttonStyles.buttonOutline}>{t('succeded')}</button>
                         </div>
                     </div>

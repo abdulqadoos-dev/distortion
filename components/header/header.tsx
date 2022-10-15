@@ -4,6 +4,7 @@ import Connection from './connection/connection'
 import styles from './header.module.scss'
 import buttonStyles from '../ui/button/button.module.scss'
 import {useState} from "react";
+import User from "./user/user";
 
 const Header = () => {
     const [navigation,setNavigation] = useState('desktop')
@@ -13,6 +14,7 @@ const Header = () => {
             <Navigation navigation={navigation} setState={setNavigation}/>
             <section className={styles.actions}>
                 <Connection/>
+                {/*<User/>*/}
                 <div className={buttonStyles.menuIcon}
                      onClick={() => setNavigation('mobile')}
                 >

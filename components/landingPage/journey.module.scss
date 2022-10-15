@@ -6,23 +6,57 @@
   font-family: $primary-font;
 
   .heading {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 50px;
 
-    h1 {
-      font-size: $medium-heading;
-      text-transform: uppercase;
-      margin: 0;
-      color: $white;
-      -webkit-text-fill-color: $white;
+    .alignCenter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      .borderPrimary {
+        border: 1px solid $primary-color;
+        width: 200px;
+      }
+
+      .borderWhite{
+        border: 1px solid $white;
+        width: 200px;
+        margin-top: 3px;
+      }
+
+      h1 {
+        font-size: $medium-heading;
+        text-transform: uppercase;
+        margin: 0;
+        color: $white;
+        -webkit-text-fill-color: $white;
+      }
+
+      h3 {
+        font-weight: 500;
+        margin: 5px 0;
+        font-size: $small-heading;
+        color: $primary-color;
+        -webkit-text-fill-color: $primary-color;
+      }
     }
 
-    h3 {
-      font-weight: 500;
-      margin: 5px 0;
-      font-size: $small-heading;
-      color: $white;
-      -webkit-text-fill-color: $white;
+
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      svg {
+        width: 60px;
+      }
     }
+
+
+
   }
 
   .banner {
@@ -50,8 +84,49 @@
 }
 
 
+@media screen and (max-width: 1440px) {
+  .container {
+    .heading {
+      .alignCenter {
+        h1 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+    .banner {
+      .image img {
+        width: 450px;
+      }
+    }
+  }
+
+}
+
 @media screen and (max-width: 1280px) {
   .container {
+    .heading {
+      gap: 20px;
+
+      .logos {
+        gap: 20px;
+        svg {
+          width: 80px;
+        }
+      }
+
+      .alignCenter {
+        h1 {
+          font-size: 22px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+
+      }
+    }
     .banner {
       .image img {
         width: 450px;
@@ -66,8 +141,23 @@
 
   .container {
     .heading {
-      h1 {
-        font-size: 26px;
+      gap: 20px;
+
+      .logos {
+        gap: 20px;
+        svg {
+          width: 60px;
+        }
+      }
+
+      .alignCenter {
+        h1 {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+
       }
     }
 
@@ -91,15 +181,36 @@
 @media screen and (max-width: 640px) {
 
   .container {
+
     .heading {
-      h1 {
-        font-size: 16px;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+
+      .logos {
+        gap: 20px;
+        svg {
+          width: 60px;
+        }
       }
 
-      h3 {
-        font-size: 10px;
+      .alignCenter {
+        h1 {
+          font-size: 14px;
+        }
+        h3 {
+          font-size: 11px;
+        }
+
+        .borderWhite, .borderPrimary {
+          width: 100px;
+        }
+
+
       }
+
     }
+
 
     .banner {
       flex-direction: column-reverse;
@@ -127,6 +238,36 @@
 
 @media screen and (max-width: 320px) {
   .container {
+
+    .heading {
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+
+      .logos {
+        gap: 10px;
+        svg {
+          width: 60px;
+        }
+      }
+
+      .alignCenter {
+        h1 {
+          font-size: 12px;
+        }
+        h3 {
+          font-size: 10px;
+        }
+
+        .borderWhite, .borderPrimary {
+          width: 100px;
+        }
+
+
+      }
+
+    }
+
     margin: 30px auto;
   }
 }

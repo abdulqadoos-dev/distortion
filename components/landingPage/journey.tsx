@@ -1,6 +1,7 @@
 import styles from "./journey.module.scss"
 import buttonStyles from "../ui/button/button.module.scss"
 import useTranslation from "next-translate/useTranslation";
+import {ReactSVG} from "react-svg";
 
 const Journey = () => {
     const {t, lang} = useTranslation('common')
@@ -8,8 +9,21 @@ const Journey = () => {
     return (
         <section className={styles.container}>
             <div className={styles.heading}>
-                <h3>Distortion is a community dApp that increase your </h3>
-                <h1>gaming experiences</h1>
+                <div className={styles.logos}>
+                    <ReactSVG src={'/images/tactics.svg'}/>
+                    <ReactSVG src={'/images/leagues.svg'}/>
+                </div>
+                <div className={styles.alignCenter}>
+                    <div className={styles.borderPrimary}></div>
+                    <h3>Cross-game ecosystem</h3>
+                    <h1>powering Gamers and Communities</h1>
+                    <div className={styles.borderWhite}></div>
+
+                </div>
+                <div className={styles.logos}>
+                    <ReactSVG src={'/images/valorant.svg'}/>
+                    <ReactSVG src={'/images/csgo.svg'}/>
+                </div>
             </div>
             <div className={styles.banner}>
                 <div className={styles.content}>

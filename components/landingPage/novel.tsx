@@ -7,53 +7,16 @@ import 'react-slideshow-image/dist/styles.css';
 const Novel = () => {
     const {t, lang} = useTranslation('common')
     const images = [
-        "/images/slide-1.jpeg",
-        "/images/slide-2.jpeg",
-        "/images/slide-4.jpeg",
+        "/images/AIR.jpg",
+        "/images/FIRE.jpg",
+        "/images/EAU.jpg",
+        "/images/TERRE.jpg",
     ];
     return (
         <section className={styles.container}>
-            {/*<Slide>*/}
-            {/*    <div className={styles.eachSlideEffect}>*/}
-            {/*        <div style={{'backgroundImage': `url(${images[0]})`}}>*/}
-            {/*            <div className={styles.content}>*/}
-            {/*                <h1>Immerse yourself </h1>*/}
-            {/*                <h1>in the Gamified</h1>*/}
-            {/*                <h1>world of Distortion</h1>*/}
-            {/*                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>*/}
-            {/*                <button className={buttonStyles.button}>{t('read the novel')}</button>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className={styles.eachSlideEffect}>*/}
-            {/*        <div style={{'backgroundImage': `url(${images[1]})`}}>*/}
-            {/*            <div className={styles.content}>*/}
-            {/*                <h1>Immerse yourself </h1>*/}
-            {/*                <h1>in the Gamified</h1>*/}
-            {/*                <h1>world of Distortion</h1>*/}
-            {/*                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>*/}
-            {/*                <button className={buttonStyles.button}>{t('read the novel')}</button>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-
-            {/*    <div className={styles.eachSlideEffect}>*/}
-            {/*        <div style={{'backgroundImage': `url(${images[2]})`}}>*/}
-            {/*            <div className={styles.content}>*/}
-            {/*                <h1>Immerse yourself </h1>*/}
-            {/*                <h1>in the Gamified</h1>*/}
-            {/*                <h1>world of Distortion</h1>*/}
-            {/*                <p>Your actions make Your success, Your tribe success, and a lasting impact </p>*/}
-            {/*                <button className={buttonStyles.button}>{t('read the novel')}</button>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-
-            {/*</Slide> */}
-
             <div className={styles.content}>
                 <h1>Immerse yourself </h1>
-                <h1>in the Gamified</h1>
+                <h1>in the Ramified</h1>
                 <h1>world of Distortion</h1>
                 <p>Your actions make Your success, Your tribe success, and a lasting impact </p>
                 <button className={buttonStyles.button}>{t('read the novel')}</button>
@@ -68,6 +31,9 @@ const Novel = () => {
                 </div>
                 <div className={styles.eachSlideEffect}>
                     <div style={{'backgroundImage': `url(${images[2]})`}}></div>
+                </div>
+                <div className={styles.eachSlideEffect}>
+                    <div style={{'backgroundImage': `url(${images[3]})`}}></div>
                 </div>
             </Slide>
 
