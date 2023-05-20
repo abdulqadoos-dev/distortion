@@ -13,8 +13,8 @@ const Header = () => {
             <Logo/>
             <Navigation navigation={navigation} setState={setNavigation}/>
             <section className={styles.actions}>
-                <Connection/>
-                {/*<User/>*/}
+                {/*<Connection/>*/}
+                <User/>
                 <div className={buttonStyles.menuIcon}
                      onClick={() => setNavigation('mobile')}
                 >

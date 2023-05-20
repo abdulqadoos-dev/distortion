@@ -34,7 +34,7 @@ const Navigation = ({navigation, setState}: any): JSX.Element => {
                     <Link href="/"><a>{t('header-nav-home')}</a></Link>
                 </li>
                 <li className={getClassName(2)}>
-                    <Link href="/"><a> {t('header-nav-tournaments')} <br/>
+                    <Link href="/dashboard/tournament"><a> {t('header-nav-tournaments')} <br/>
                         <sup> (coming soon)</sup></a></Link>
                 </li>
 
@@ -43,13 +43,23 @@ const Navigation = ({navigation, setState}: any): JSX.Element => {
                 </li>
 
                 <li className={getClassName(4)}>
-                    <Link href="https://distortionnft.io/fr/episode-1/"><a>{t('Story')}</a></Link>
+                    <Link href="/dashboard/overview"><a>{t('Dashboard')}</a></Link>
                 </li>
 
                 <li className={getClassName(4)}>
                     <Link
-                        href="https://distortionnft.io/wp-content/uploads/2022/10/Light-Paper-V6b.pdf"><a>{t('Lightpaper')}</a></Link>
+                        href="/dashboard/your-profile"><a>{t('Your Profile')}</a></Link>
                 </li>
+
+                <li className={getClassName(4)}>
+                    <Link
+                        href="/signup"><a>{t('Join')}</a></Link>
+                </li>
+
+                {/*<li className={getClassName(4)}>*/}
+                {/*    <Link*/}
+                {/*        href="https://distortionnft.io/wp-content/uploads/2022/10/Light-Paper-V6b.pdf"><a>{t('Lightpaper')}</a></Link>*/}
+                {/*</li>*/}
 
             </ul>
         </div>

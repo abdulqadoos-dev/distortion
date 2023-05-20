@@ -17,12 +17,12 @@ const LeaderBoard = () => {
                 <ReactSVG src={"/images/icons/coming-soon.svg"}/>
             </h1>
 
-            <div className={stylesBlockUi.container}>
-                <h1>
-                    <ReactSVG src={"/images/icons/coming-soon.svg"}/>
-                    {t('Coming soon...')}
-                </h1>
-            </div>
+            {/*<div className={stylesBlockUi.container}>*/}
+            {/*    <h1>*/}
+            {/*        <ReactSVG src={"/images/icons/coming-soon.svg"}/>*/}
+            {/*        {t('Coming soon...')}*/}
+            {/*    </h1>*/}
+            {/*</div>*/}
 
             <section className={styles.leaderboardTabsContainer}>
 
