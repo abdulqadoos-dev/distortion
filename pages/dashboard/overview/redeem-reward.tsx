@@ -53,6 +53,9 @@ const RedeemReward = () => {
             </section>
         )
     }
+    return (
+        <div></div>
+    )
 }
 
 export default RedeemReward
